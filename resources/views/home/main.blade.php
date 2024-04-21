@@ -58,7 +58,6 @@
           I’m feeling lonely. I really need someone who wants to hear my story.</p>
       </div>
     </div>
-    
   </div>
   
   <div class="container mt-5">
