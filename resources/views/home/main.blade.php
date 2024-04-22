@@ -28,7 +28,7 @@
     </button>
 </div>
 
-<div class="container">
+<div class="container-xl">
   <div class="container mt-5">
     <div class="row align-items-center">
       <div class="col">
@@ -60,7 +60,7 @@
     </div>
   </div>
   
-  <div class="container mt-5">
+  <div class="container-xl mt-5">
     <div class="row">
       <div class="col d-flex justify-content-center">
         <img src="img/image 2.png" alt="" width="400">
@@ -72,7 +72,7 @@
     </div>
   </div>
   
-  <div class="container mt-5">
+  <div class="container-xl mt-5">
     <div class="row align-items-center">
       <div class="col">
         <h2 class="fw-bold">Machine Learning</h2>
@@ -84,7 +84,7 @@
     </div>
   </div>
   
-  <div class="container mt-5">
+  <div class="container-xl mt-5">
     <div class="row align-items-center">
       <div class="col d-flex justify-content-center">
         <img src="img/image 3.png" alt="" width="400">
