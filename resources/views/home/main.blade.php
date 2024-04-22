@@ -28,28 +28,28 @@
     </button>
 </div>
 
-<div class="container-xl">
+<div class="container-fluid">
   <div class="container mt-5">
     <div class="row align-items-center">
-      <div class="col">
-        <img src="img/Addiction.png" alt="">
+      <div class="col-md order-md-1">
+        <img class="w-100" src="img/Addiction.png" alt="">
       </div>
-      <div class="col">
+      <div class="col-md order-md-2">
         <p>Sometimes</p>
         <h3>Life Can Be Stressful</h3>
         <p>In life's storms, HoldU offers solace and support amidst overwhelming stress. Navigate with personalized tools, expert guidance, and a compassionate community. Rediscover inner calm and serenity with us.</p>
       </div>
     </div>
-  </div>
+</div>
   
   <h1 class="mt-5 fw-bold">Your life does matters.</h1>
   
-  <div class="container-xl bg-primary-subtle border rounded-1">
+  <div class="containe-fluid bg-custom-home border rounded-1">
     <div class="row">
-      <div class="col d-flex justify-content-center pt-4">
-        <img src="img/Body_shaming.png" alt="" width="300px">
+      <div class="col-md order-md-1 d-flex justify-content-center pt-4">
+        <img class="w-100" src="img/Body_shaming.png" alt="">
       </div>
-      <div class="col">
+      <div class="col-md order-md-2">
         <p class="mb-0 mt-5">But,</p>
         <h2 id="holducan">Hold U can</h2>
         <p class="mb-4">With our latest technology and powerful AI. Hold U can makes you feel better. Find your inner peace now with our latest meditation guide and daily diaries.</p>
@@ -62,10 +62,10 @@
   
   <div class="container-xl mt-5">
     <div class="row">
-      <div class="col d-flex justify-content-center">
-        <img src="img/image 2.png" alt="" width="400">
+      <div class="col-md order-md-1 d-flex justify-content-center">
+        <img class="w-100" src="img/image 2.png" alt="">
       </div>
-      <div class="col">
+      <div class="col-md order-md-2">
         <h2 class="fw-bold">Meet Sana</h2>
         <p>Your latest AI Companion in mental wellness. <br> With empathy and expertise, Sana provides personalized support and guidance on your journey to well-being. Engage in meaningful conversations, gain insights, and discover new paths towards inner peace with Sana, your trusted companion for mental wellness.</p>
       </div>
@@ -74,22 +74,22 @@
   
   <div class="container-xl mt-5">
     <div class="row align-items-center">
-      <div class="col">
+      <div class="col-md order-md-1">
         <h2 class="fw-bold">Machine Learning</h2>
         <p>Experience the power of predictive mood analysis with Sana, our cutting-edge machine learning companion. Discover how Sana utilizes advanced algorithms to anticipate your mood, offering personalized support and guidance tailored to your emotional well-being. Say hello to a new era of mental wellness with Sana by your side.</p>
       </div>
-      <div class="col d-flex justify-content-center">
-        <img src="img/SanaPic 6.png" alt="" width="400">
+      <div class="col-md order-md-2 d-flex justify-content-center">
+        <img class="w-100" src="img/SanaPic 6.png" alt="">
       </div>
     </div>
   </div>
   
   <div class="container-xl mt-5">
     <div class="row align-items-center">
-      <div class="col d-flex justify-content-center">
-        <img src="img/image 3.png" alt="" width="400">
+      <div class="col-md order-md-1 d-flex justify-content-center">
+        <img class="w-100" src="img/image 3.png" alt="">
       </div>
-      <div class="col">
+      <div class="col-md order-md-2">
         <h2 class="fw-bold">ConnectU</h2>
         <p>Where Minds Unite. Dive into a vibrant social media forum within HoldU's core features. Connect, engage, and share with like-minded individuals, fostering meaningful connections and conversations centered around mental wellness and personal growth.</p>
       </div>

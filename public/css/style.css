@@ -29,3 +29,10 @@ a.navbar-brand > img.logo {
 .rounded {
     border-radius: 30px !important;
 }
+.thumbnail {
+    width: 100%;
+}
+.bg-custom-home {
+    background: linear-gradient(90deg, #75CAD0 0%, #175A5F 50%, #68B4B9 100%);
+    width: 100%;
+}
