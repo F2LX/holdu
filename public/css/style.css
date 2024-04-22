@@ -1,10 +1,10 @@
 body {
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    background: #f4e1bc;
+    background: #F4E1BC;
 }
 .bg-holdu-linear {
-    background: linear-gradient(90deg, #0c78b2, #56a9af);
+    background:linear-gradient(90deg,#0C78B2, #56A9AF);
 }
 
 a.navbar-brand > img.logo {
@@ -28,7 +28,4 @@ a.navbar-brand > img.logo {
 }
 .rounded {
     border-radius: 30px !important;
-}
-
-@media only screen {
 }
