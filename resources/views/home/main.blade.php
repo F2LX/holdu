@@ -32,7 +32,7 @@
   <div class="container mt-5">
     <div class="row align-items-center">
       <div class="col">
-        <img src="img/Addiction.png" class="img-fluid" alt="">
+        <img src="img/Addiction.png" alt="">
       </div>
       <div class="col">
         <p>Sometimes</p>
