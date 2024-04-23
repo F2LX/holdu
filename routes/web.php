@@ -21,4 +21,4 @@ Route::get('/dashboard', function() {
     return view('user.dashboard');
 });
 
-// Dashboard User Handler
+// ConnectU User Handler
