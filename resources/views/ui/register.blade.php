@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
+
+    {{-- Baru --}}
     <div class="kotak">
       <div class="container d-flex justify-content-center">
         <div class="sm-row-box align-items-center mt-5 rounded">
@@ -26,20 +28,24 @@
             <h2 class="fw-bold text-center text-light mb-5">Login</h2>
               <form class="form-login">
                 <div class="mb-3">
+                  <label class="form-label text-light">Username</label>
+                  <input type="text" class="form-control login-button">
+                  {{-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> --}}
+                </div>
+                <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" class="form-control login-button" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label text-light">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <input type="password" class="form-control login-button" id="exampleInputPassword1">
                 </div>
                 {{-- <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div> --}}
-                <p class="fw-bold text-light text-end">Forgot your passsword?</p>
                 <button type="submit" class="btn btn-primary w-100">Login</button>
-                <p class="ms-5 mt-2 text-light">Already have an account? <a href="#" class="ms-1 text-light text-decoration-none fw-bold">Register now!</a></p>  
+                <p class="ms-5 mt-2 text-light">Already have an account? <a href="#" class="fw-bold text-light text-decoration-none" >Login now!</a></p>
               </form>
           </div>
         </div>

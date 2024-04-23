@@ -1,10 +1,10 @@
 body {
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    background: #F4E1BC;
+    background: #f4e1bc;
 }
 .bg-holdu-linear {
-    background:linear-gradient(90deg,#0C78B2, #56A9AF);
+    background: linear-gradient(90deg, #0c78b2, #56a9af);
 }
 
 a.navbar-brand > img.logo {
@@ -33,6 +33,53 @@ a.navbar-brand > img.logo {
     width: 100%;
 }
 .bg-custom-home {
-    background: linear-gradient(90deg, #75CAD0 0%, #175A5F 50%, #68B4B9 100%);
+    background: linear-gradient(90deg, #75cad0 0%, #175a5f 50%, #68b4b9 100%);
     width: 100%;
+}
+
+.login-button {
+    background-color: rgb(240, 248, 255, 0.6);
+}
+
+.sm-row-box {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background: linear-gradient(#4d6011 0%, #042600 100%);
+}
+
+.form-login {
+    width: 80%;
+}
+
+.kotak-login {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 0 10px 10px 0; */
+}
+.kotak-login-2 {
+    display: flex;
+    flex-direction: column;
+    /* color: #175a5f; */
+    height: 550px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 10px 0 0 10px; */
+}
+
+.login-pic {
+    width: 90%;
+    height: 700px;
+}
+
+.kotak {
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
 }
