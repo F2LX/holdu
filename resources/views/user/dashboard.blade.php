@@ -29,27 +29,53 @@
     </button>
 </div>
 {{-- End carousel --}}
-<p class="mt-4 fw-bold text-center">How are you feeling today?</p>
+<p class="mt-5 mb-5 fw-bold text-center">How are you feeling today?</p>
 
 <div class="container d-flex justify-content-center">
-        <div class="shortcut-box">
-            <div class="col rounded d-flex justify-content-center bg-light">
-                <img src="img/SanaPic 5.png" class="icon-pic" alt="">
+        <div class="shortcut-box bg-primary ps-5 pe-5 bg-success rounded-5">
+            <div class="col rounded d-flex align-items-center justify-content-center flex-column mt-3">
+              <div class="bg-light d-flex rounded icon-box justify-content-center">
+                <img src="img/SanaPic 5.png" class="sana-pic" alt="">
+              </div>
+              <p class="text-light">Chat with Sana</p>
             </div>
-            <div class="col rounded d-flex justify-content-center bg-light">
-                <img src="img/solar_meditation-round-linear.png" class="icon-pic" alt="">
+            <div class="col rounded d-flex align-items-center justify-content-center flex-column mt-3">
+              <div class="bg-light rounded icon-box text-center">
+                <span class="material-symbols-outlined icon-pic ">
+                  self_improvement
+                </span>
+              </div>
+              <p class="text-light">Meditation</p>
             </div>
-            <div class="col rounded d-flex justify-content-center bg-light">
-                <img src="img/iconoir_community.png" class="icon-pic" alt="">
+            <div class="col rounded d-flex align-items-center justify-content-center flex-column mt-3">
+              <div class="bg-light rounded icon-box text-center">
+                <span class="material-symbols-outlined icon-pic ">
+                  event
+                </span>
+              </div>
+              <p class="text-light">Reminder</p>
             </div>
-            <div class="col rounded d-flex justify-content-center bg-light">
-                <img src="img/carbon_reminder.png" class="icon-pic" alt="">
+            <div class="col rounded d-flex align-items-center justify-content-center flex-column mt-3">
+              <div class="bg-light rounded icon-box text-center">
+                <span class="material-symbols-outlined icon-pic ">
+                  developer_guide
+                </span>
+              </div>
+              <p class="text-light">My Journal</p>
             </div>
-            <div class="col rounded d-flex justify-content-center bg-light">
-                <img src="img/mingcute_diary-fill.png" class="icon-pic" alt="">
+            <div class="col rounded d-flex align-items-center justify-content-center flex-column mt-3">
+              <div class=" bg-light icon-box text-center rounded">
+                <span class=" material-symbols-outlined icon-pic">
+                    groups
+                </span>
+              </div>
+              <p class="text-light">ConnectU</p>
             </div>
         </div>   
 </div>
+
+<p class="mt-5 mb-5 fw-bold text-center">Post from ConnectU</p>
+
 
     
 @endsection

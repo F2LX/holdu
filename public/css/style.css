@@ -110,11 +110,24 @@ a.navbar-brand > img.logo {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    width: 80%;
+    justify-content: center;
+    width: 70%;
+    height: 140px;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, #bbe567 0%, #629dad 59%, #2553eb 100%);
+}
+
+.sana-pic {
+    width: 70px;
 }
 
 .icon-pic {
-    width: 100%;
+    font-size: 70px !important;
+}
+
+.icon-box {
+    width: 90px;
+    height: 80px;
 }
