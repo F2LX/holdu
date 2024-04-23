@@ -2,6 +2,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     background: #f4e1bc;
+    font-size: 20px;
 }
 .bg-holdu-linear {
     background: linear-gradient(90deg, #0c78b2, #56a9af);
@@ -80,6 +81,34 @@ a.navbar-brand > img.logo {
 .kotak {
     display: flex;
     height: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.stroke-white {
+    -webkit-text-stroke: 1px white;
+
+    color: transparent;
+}
+
+.sit-pic {
+    width: 60%;
+    /* height: 400px; */
+}
+
+.home-shaming {
+    width: 65%;
+    /* height: 490px; */
+}
+
+.mushroom-pic {
+    width: 75%;
+    /* height: 400px; */
+}
+
+.shortcut-box {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }

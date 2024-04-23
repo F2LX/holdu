@@ -1,6 +1,7 @@
 @extends('ui.home')
 
 @section('content')
+{{-- Carousel --}}
 <div id="carouselExampleIndicators" class="carousel slide mt-3 rounded overflow-hidden">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -27,12 +28,12 @@
       <span class="visually-hidden">Next</span>
     </button>
 </div>
-
-<div class="container-fluid">
+{{-- End carousel --}}
+<div class="container-fluid p-0">
   <div class="container mt-5">
     <div class="row align-items-center">
-      <div class="col-md order-md-1">
-        <img class="w-100" src="img/Addiction.png" alt="">
+      <div class="col-md order-md-1 d-flex justify-content-center">
+        <img class="home-shaming" src="img/Addiction.png" alt="">
       </div>
       <div class="col-md order-md-2">
         <p>Sometimes</p>
@@ -42,18 +43,18 @@
     </div>
 </div>
   
-  <h1 class="mt-5 fw-bold">Your life does matters.</h1>
+  <h1 class="ms-4 mt-5 fw-bold stroke-white">Your life does matters.</h1>
   
-  <div class="containe-fluid bg-custom-home border rounded-1">
-    <div class="row">
+  <div class="container-fluid bg-custom-home border rounded-1">
+    <div class="row align-item-center">
       <div class="col-md order-md-1 d-flex justify-content-center pt-4">
-        <img class="w-100" src="img/Body_shaming.png" alt="">
+        <img class="home-shaming" src="img/Body_shaming.png" alt="">
       </div>
       <div class="col-md order-md-2">
         <p class="mb-0 mt-5">But,</p>
         <h2 id="holducan">Hold U can</h2>
-        <p class="mb-4">With our latest technology and powerful AI. Hold U can makes you feel better. Find your inner peace now with our latest meditation guide and daily diaries.</p>
-        <p class="">Hey,<br>
+        <p class="mb-4">With our latest technology and powerful AI. Hold U can makes you feel better. <br> Find your inner peace now with our latest meditation guide and daily diaries.</p>
+        <p>Hey,<br>
           I had a bad day. No one wants to be my friend. <br> 
           I’m feeling lonely. I really need someone who wants to hear my story.</p>
       </div>
@@ -79,17 +80,17 @@
         <p>Experience the power of predictive mood analysis with Sana, our cutting-edge machine learning companion. Discover how Sana utilizes advanced algorithms to anticipate your mood, offering personalized support and guidance tailored to your emotional well-being. Say hello to a new era of mental wellness with Sana by your side.</p>
       </div>
       <div class="col-md order-md-2 d-flex justify-content-center">
-        <img class="w-100" src="img/SanaPic 6.png" alt="">
+        <img class="home-shaming" src="img/SanaPic 6.png" alt="">
       </div>
     </div>
   </div>
   
   <div class="container-xl mt-5">
     <div class="row align-items-center">
-      <div class="col-md order-md-1 d-flex justify-content-center">
-        <img class="w-100" src="img/image 3.png" alt="">
+      <div class="col-xl order-xl-1 d-flex justify-content-center">
+        <img class="mushroom-pic" src="img/image 3.png" alt="">
       </div>
-      <div class="col-md order-md-2">
+      <div class="col-xl order-xl-2">
         <h2 class="fw-bold">ConnectU</h2>
         <p>Where Minds Unite. Dive into a vibrant social media forum within HoldU's core features. Connect, engage, and share with like-minded individuals, fostering meaningful connections and conversations centered around mental wellness and personal growth.</p>
       </div>

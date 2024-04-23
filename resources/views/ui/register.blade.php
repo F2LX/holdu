@@ -22,13 +22,13 @@
       <div class="container d-flex justify-content-center">
         <div class="sm-row-box align-items-center mt-5 rounded">
           <div class="kotak-login-2">
-            <img src="img/Rectangle 10.png"  alt="" class="rounded login-pic">
+            <img src="img/Rectangle 11.png"  alt="" class="rounded login-pic">
           </div>
           <div class="kotak-login">
-            <h2 class="fw-bold text-center text-light mb-5">Login</h2>
+            <h2 class="fw-bold text-center text-light mb-5">Register</h2>
               <form class="form-login">
                 <div class="mb-3">
-                  <label class="form-label text-light">Username</label>
+                  <label class="form-label text-light">Fullname</label>
                   <input type="text" class="form-control login-button">
                   {{-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> --}}
                 </div>
