@@ -2,7 +2,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     background: #f4e1bc;
-    font-size: 20px;
+    font-size: 17px;
 }
 .bg-holdu-linear {
     background: linear-gradient(90deg, #0c78b2, #56a9af);
@@ -112,3 +112,68 @@ a.navbar-brand > img.logo {
     justify-content: center;
     align-items: center;
 }
+
+/* ConnectU */
+.wider {
+    width: 75%;
+}
+
+.sidebar {
+    width: 25%;
+}
+
+.post {
+    margin-top: 15px;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 18px;
+    background: white;
+    border-radius: 12px;
+}
+
+.textarea-connectu {
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.thumbnail-connectu {
+    width: 50px;
+    margin-right: 10px;
+}
+.post-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.category-bar {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(180deg,#9ECD7D 0%, #3C6FD3 100%);
+}
+
+.category-bar ul{
+    list-style-type: none;
+    margin: 0;
+    line-height: 40px;
+    padding: 0;
+}
+.banner-bar {
+    margin-top: 12px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    color: white;
+    background: linear-gradient(180deg,#9ECD7D 0%, #3C6FD3 100%);
+}
+
+/* End ConnectU */

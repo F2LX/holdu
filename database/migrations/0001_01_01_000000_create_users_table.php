@@ -21,6 +21,7 @@ return new class extends Migration
             $table->date('premium_until')->nullable();
             $table->string('status');
             $table->string('role');
+            $table->string('img')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
