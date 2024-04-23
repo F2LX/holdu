@@ -35,6 +35,8 @@ class AuthController extends Controller
             // } else if (auth()->user()->role==="admin") {
             //     return redirect()->intended('/admin');
             // }
+
+
             return redirect()->intended('/dashboard');
         } else {
             // Login failed
@@ -49,13 +51,6 @@ class AuthController extends Controller
     {
         return view('home.register');
     }
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -64,43 +59,12 @@ class AuthController extends Controller
     {
         $data=$request->validate([
             "name" => "required",
-            "email"=> "required|email",
+            "email"=> "required|email|unique:users,email",
             "password"=>"required"
         ]);
-
+        $data["status"]="Inactive";
+        $data["role"]="User";
         User::create($data);
         return redirect("/login")->with("success","Account has been created!");
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(User $user)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(User $user)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, User $user)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(User $user)
-    {
-        //
     }
 }

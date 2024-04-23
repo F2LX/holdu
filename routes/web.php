@@ -20,3 +20,5 @@ Route::post('/register/store', [AuthController::class,'store']);
 Route::get('/dashboard', function() {
     return view('user.dashboard');
 });
+
+// ConnectU User Handler
