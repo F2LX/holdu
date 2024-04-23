@@ -1,19 +1,22 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home.main');
 });
 
-Route::get('/login', function () {
-    return view('ui.login');
-});
+// Auth Controller
 
-Route::get('/register', function () {
-    return view('ui.register');
-});
+Route::get('/login', [AuthController::class,'index']);
+Route::post('/login/validate', [AuthController::class,'login']);
 
-Route::get('/beranda',function(){
-    return view('home.beranda');
+Route::get('/register', [AuthController::class,'register']);
+Route::post('/register/store', [AuthController::class,'store']);
+
+
+// Dashboard
+Route::get('/dashboard', function() {
+    return view('user.dashboard');
 });
