@@ -31,24 +31,24 @@
 {{-- End carousel --}}
 <p class="mt-4 fw-bold text-center">How are you feeling today?</p>
 
-<div class="container">
-    <div class="d-flex flex-row">
-        <div class="col rounded">
-            <img src="img/SanaPic 5.png" alt="">
-        </div>
-        <div class="col rounded">
-            <img src="img/solar_meditation-round-linear.png" alt="">
-        </div>
-        <div class="col rounded">
-            <img src="img/iconoir_community.png" alt="">
-        </div>
-        <div class="col rounded">
-            <img src="img/carbon_reminder.png" alt="">
-        </div>
-        <div class="col rounded">
-            <img src="img/mingcute-diary-fill" alt="">
-        </div>
-    </div>   
+<div class="container d-flex justify-content-center">
+        <div class="shortcut-box">
+            <div class="col rounded d-flex justify-content-center bg-light">
+                <img src="img/SanaPic 5.png" class="icon-pic" alt="">
+            </div>
+            <div class="col rounded d-flex justify-content-center bg-light">
+                <img src="img/solar_meditation-round-linear.png" class="icon-pic" alt="">
+            </div>
+            <div class="col rounded d-flex justify-content-center bg-light">
+                <img src="img/iconoir_community.png" class="icon-pic" alt="">
+            </div>
+            <div class="col rounded d-flex justify-content-center bg-light">
+                <img src="img/carbon_reminder.png" class="icon-pic" alt="">
+            </div>
+            <div class="col rounded d-flex justify-content-center bg-light">
+                <img src="img/mingcute_diary-fill.png" class="icon-pic" alt="">
+            </div>
+        </div>   
 </div>
 
     

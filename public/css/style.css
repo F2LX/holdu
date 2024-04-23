@@ -109,6 +109,12 @@ a.navbar-brand > img.logo {
 .shortcut-box {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    gap: 10px;
+    /* justify-content: center; */
     align-items: center;
+    width: 80%;
+}
+
+.icon-pic {
+    width: 100%;
 }
