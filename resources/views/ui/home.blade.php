@@ -10,6 +10,9 @@
     {{-- Import HoldU CSS --}}
     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
 
+    {{-- Import HoldU Mobile CSS --}}
+    <link rel="stylesheet" href="{{ asset("css/mobile.css") }}">
+
     {{-- Preconnect Poppins from Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
