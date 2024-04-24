@@ -137,6 +137,14 @@ a.navbar-brand > img.logo {
     width: 75%;
 }
 
+.form-comment {
+    width: 80%;
+}
+
+.btn-send {
+    width: 20%;
+}
+
 .sidebar {
     width: 25%;
 }

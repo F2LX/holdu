@@ -33,9 +33,9 @@
                     </div>
                     
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium sunt sed mollitia, veritatis delectus rerum nihil exercitationem explicabo eius ipsum quis, molestias vitae voluptas, voluptatum nostrum consequatur quae ratione repellat?</p>
-                    <form action="" class="w-100">
-                        <input type="text" class="form-control" id="" placeholder="Comment Here">
-                        <button class="btn btn-primary">Send</button>
+                    <form action="" class="w-100 d-flex">
+                        <input type="text" class="form-control form-comment" id="" placeholder="Comment Here">
+                        <button class="btn btn-primary btn-send">Send</button>
                     </form>
                 </div>
                 
