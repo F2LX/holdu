@@ -76,6 +76,41 @@
 
 <p class="mt-5 mb-5 fw-bold text-center">Post from ConnectU</p>
 
+<div class="container d-flex justify-content-center mb-5">
+  <div class="comment-box">
+    <div class="row justify-content-center align-items-center gap-4">
+      <div class="col bg-light rounded-4 p-3 pb-0">
+        <div class="d-flex flex-row align-items-center">
+          <img src="img/Tomatoes.png" class="mushroom" alt="">
+          <h5 class="ms-3 mb-0">Tomato</h5>
+        </div>
+        <p class="mb-1 mt-2">Just wanted to share a little moment of joy from my day. Today, I stumbled upon a beautiful patch of wildflowers on my walk home from work. It might seem small, but it really brightened my day and reminded me to appreciate the beauty in the world around us. Sometimes it's the little things that make all the difference. 🌼 #Gratitude #NatureWalk</p>
+        <p class="fs-6 mb-1">129 replies</p>
+      </div>
+      <div class="col bg-light rounded-4 p-3 pb-0">
+        <div class="d-flex flex-row align-items-center flex-wrap">
+          <img src="img/Mushroom.png" class="mushroom" alt="">
+          <h5 class="ms-3 mb-0">Mushroom</h5>
+          <div class="ms-4 d-flex flex-row align-items-center bg-primary rounded-5 p-2 text-light">
+            <span class="material-symbols-outlined">
+              check
+              </span>
+            <h5 class="mb-0">Psychologist</h5>
+          </div>
+        </div>
+        <p class="mb-1 mt-2">Life can be a balancing act, but today I found a moment of peace amidst the chaos. Took some time to meditate and center myself, and it made all the difference. Remember to prioritize self-care and find moments of stillness in your day. Your mental well-being is worth it. 🧘‍♂️ #SelfCare #Mindfulness</p>
+        <p class="fs-6 mb-1">129 replies</p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center rounded-4 connect-box flex-column text-light">
+      <p class="fs-4">More At <br>
+        ConnectU</p>
+        <a href="#"><span class=" text-light material-symbols-outlined arrow-icon">
+          arrow_circle_right
+          </span> </a>  
+    </div>
+  </div>
+</div>
 
     
 @endsection

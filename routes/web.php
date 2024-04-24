@@ -22,3 +22,8 @@ Route::get('/dashboard', function() {
 });
 
 // ConnectU User Handler
+
+//Chat Page
+Route::get('/chat-page', function(){
+    return view('user.chat');
+});
