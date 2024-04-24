@@ -13,7 +13,8 @@ class StorePostRequest extends FormRequest
     {
         if (auth()->user()->role==='admin') {
             return true;
-        }
+        } 
+        // To Be Added Here: Make sure the user only adds post from auth->user()->id
         return false;
     }
 

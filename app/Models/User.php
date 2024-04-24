@@ -22,7 +22,8 @@ class User extends Authenticatable
         'password',
         'premium_until',
         'status',
-        'role'
+        'role',
+        'img'
     ];
 
     /**
