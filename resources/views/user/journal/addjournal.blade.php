@@ -8,11 +8,11 @@
           @csrf
         <h3 class="fw-bold">Journal Title</h3>
         <div class="input-group mb-3">
-            <input type="text" name="title" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="text" name="title" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
           </div>
         <h3 class="fw-bold">Content</h3>
         <div class="input-group">
-            <textarea class="text-area rounded-4" name="content" aria-label="With textarea"></textarea>
+            <textarea class="text-area rounded-4 p-3" name="content" aria-label="With textarea" required></textarea>
           </div>
         <button type="submit" class="btn btn-success mt-4">Post</button>
         </form>

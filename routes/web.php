@@ -27,6 +27,9 @@ Route::post('/connectu/post',[PostController::class,'store']);
 Route::get('/journal',[JournalController::class,'index']);
 Route::get('/journal/add',[JournalController::class,'create']);
 Route::post('/journal/add/post',[JournalController::class,'store']);
+Route::get('/journal/view/{journal:id}',[JournalController::class,'show']);
+Route::put('/journal/view/put/{journal:id}',[JournalController::class,'update']);
+Route::delete('/journal/delete/{journal:id}',[JournalController::class,'destroy']);
 
 
 // Dashboard

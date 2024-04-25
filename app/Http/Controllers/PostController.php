@@ -61,8 +61,9 @@ class PostController extends Controller
      */
     public function update(UpdatePostRequest $request, $id)
     {
-        $user = Post::find($id)->user()->id;
-        if ($user->id == auth()->user()->id) {
+        $post = Post::find($id);
+        $user=$post->user->id;
+        if ($user == auth()->user()->id) {
             // Validate update if requester id == post owner
         }
         return redirect();
