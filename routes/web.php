@@ -42,5 +42,7 @@ Route::get('/chat-page', function() {
     return view('user.chat');
 });
 
-
+Route::get('/profile',function(){
+    return view('user.profile');
+});
 // ConnectU User Handler
