@@ -11,7 +11,7 @@ class StorePostRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        if (auth()->user()->role==='admin') {
+        if (auth()->user()) {
             return true;
         } 
         // To Be Added Here: Make sure the user only adds post from auth->user()->id

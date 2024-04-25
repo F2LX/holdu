@@ -4,11 +4,12 @@
 
 <div class="container">
         
-    <div class="d-flex">
+    <div class="d-flex flex-wrap w-100">
         <div class="wider p-2">
-            <form class="d-flex" action="/connectu/search/req" method="get">
-                <input type="text" name="" id="" class="form-control rounded">
-                <button type="submit" class="btn btn-primary px-5 py-1 rounded">
+            <form class="d-flex mb-3 mt-4 gap-2" action="/connectu/search/req" method="get">
+                @csrf
+                <input type="text" name="" id="" class="form-control" placeholder="Search Here...">
+                <button type="submit" class="btn btn-primary px-5 py-1">
                     <span class="material-symbols-outlined">
                         search
                         </span>
@@ -17,7 +18,8 @@
         
 
             <div class="w-100">
-                <form action="" class="w-100" method="post">
+                <form action="/connectu/post" class="w-100" method="post">
+                    @csrf
                     <textarea class="w-100 textarea-connectu" name="content" id="" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
                     <button type="submit" class="btn btn-primary">
                         Submit
@@ -33,9 +35,14 @@
                     </div>
                     
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium sunt sed mollitia, veritatis delectus rerum nihil exercitationem explicabo eius ipsum quis, molestias vitae voluptas, voluptatum nostrum consequatur quae ratione repellat?</p>
-                    <form action="" class="w-100 d-flex">
+                    <form action="" class="w-100 d-flex gap-2">
                         <input type="text" class="form-control form-comment" id="" placeholder="Comment Here">
                         <button class="btn btn-primary btn-send">Send</button>
+                        @livewire('post-modal')
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#postModal">
+                            View Post
+                        </button>
+                        
                     </form>
                 </div>
                 
@@ -43,7 +50,7 @@
             </div>
         </div>
         <div class="sidebar p-2">
-            <div class="category-bar">
+            <div class="category-bar mt-4">
                 <h2>Category</h2>
                 <ul>
                     <li>Verified Psychologist</li>

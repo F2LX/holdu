@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PostController;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\Routing\Route as ComponentRoutingRoute;
@@ -17,6 +18,7 @@ Route::post('/login/validate', [AuthController::class,'login']);
 Route::get('/register', [AuthController::class,'register']);
 Route::post('/register/store', [AuthController::class,'store']);
 
+Route::post('/connectu/post',[PostController::class,'store']);
 
 // Dashboard
 Route::get('/dashboard', function() {
