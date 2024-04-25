@@ -11,7 +11,7 @@
           </div>
         <h3 class="fw-bold">Content</h3>
         <div class="input-group">
-            <textarea class="form-control" aria-label="With textarea"></textarea>
+            <textarea class="text-area rounded-4" aria-label="With textarea"></textarea>
           </div>
         <button class="btn btn-success mt-4">Post</button>
     </div>

@@ -39,5 +39,8 @@ Route::get('/my-journal/add',function(){
     return view('user.addjournal');
 });
 
+Route::get('/profile',function(){
+    return view('user.profile');
+});
 
 // ConnectU User Handler
