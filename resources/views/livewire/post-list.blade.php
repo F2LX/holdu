@@ -10,11 +10,10 @@
                 <input type="text" class="form-control form-comment" id="" placeholder="Comment Here">
                 <button class="btn btn-primary btn-send">Send</button>
                 @livewire('post-modal')
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#postModal">
-                    View Post
-                </button>
-                
             </form>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#postModal">
+                View Post
+            </button>
         </div>
     </div>
 </div>
