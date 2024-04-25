@@ -48,4 +48,18 @@ Route::get('/chat-page', function() {
 Route::get('/profile',function(){
     return view('user.profile');
 });
+Route::get('/reminder',function(){
+    return view('user.reminder');
+});
+
+Route::get('/reminder',function(){
+    return view('user.reminder');
+});
+
+Route::get('/mediGuide',function(){
+    return view('user.meditationGuide');
+});
+Route::get('/mediTrack',function(){
+    return view('user.meditationTrack');
+});
 // ConnectU User Handler
