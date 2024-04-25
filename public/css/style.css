@@ -2,7 +2,6 @@ body {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     background: #f4e1bc;
-    font-size: 17px;
 }
 .bg-holdu-linear {
     background: linear-gradient(90deg, #0c78b2, #56a9af);
@@ -120,16 +119,21 @@ a.navbar-brand > img.logo {
 }
 
 .sana-pic {
-    width: 70px;
+    padding: 10px;
+    width: 100%;
+}
+
+.wrap-icon-shortcut {
+    padding: 5px;
 }
 
 .icon-pic {
-    font-size: 70px !important;
+    font-size: 80px !important;
 }
 
 .icon-box {
     width: 90px;
-    height: 80px;
+    height: 90px;
 }
 
 .mushroom {

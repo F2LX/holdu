@@ -1,5 +1,36 @@
 @media only screen and (max-width: 750px) {
     .comment-box {
         flex-direction: column !important;
+        flex-wrap: wrap;
+    }
+    .shortcut-box .col {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .wider {
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    #carouselExampleIndicators {
+        border-radius: 7px !important;
+    }
+    .shortcut-box {
+        width: 100%;
+        text-align: center;
+        align-items: start !important;
+    }
+    .shortcut-box .col {
+        width: 50%;
+    }
+    .container {
+        width: 100% !important;
+    }
+    .col {
+        width: 100% !important;
+
     }
 }

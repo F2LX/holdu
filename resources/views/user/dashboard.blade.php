@@ -2,7 +2,7 @@
 
 @section('content')
 {{-- Carousel --}}
-<div id="carouselExampleIndicators" class="carousel slide mt-3 rounded overflow-hidden">
+<div id="carouselExampleIndicators" class="carousel slide mt-3 rounded overflow-hidden m-3">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -29,52 +29,52 @@
     </button>
 </div>
 {{-- End carousel --}}
-<p class="mt-5 mb-5 fw-bold text-center">How are you feeling today?</p>
+<h3 class="mt-5 mb-5 fw-bold text-center">How are you feeling today?</h3>
 
 <div class="container d-flex justify-content-center">
-        <div class="shortcut-box bg-primary ps-5 pe-5 bg-success rounded-5">
-            <div class="col rounded d-flex align-items-center justify-content-center flex-column mt-3">
-              <div class="bg-light d-flex rounded icon-box justify-content-center">
+        <div class="shortcut-box bg-primary p-3 bg-success rounded-5">
+            <div class="col rounded d-flex align-items-center justify-content-center   flex-column">
+              <div class="bg-light d-flex rounded icon-box justify-content-center wrap-icon-shortcut">
                 <img src="img/SanaPic 5.png" class="sana-pic" alt="">
               </div>
-              <p class="text-light">Chat with Sana</p>
+              <p class="text-light text-shortcut">Chat with Sana</p>
             </div>
-            <div class="col rounded d-flex align-items-center justify-content-center flex-column mt-3">
+            <div class="col rounded d-flex align-items-center justify-content-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center">
                 <span class="material-symbols-outlined icon-pic ">
                   self_improvement
                 </span>
               </div>
-              <p class="text-light">Meditation</p>
+              <p class="text-light text-shortcut">Meditation</p>
             </div>
-            <div class="col rounded d-flex align-items-center justify-content-center flex-column mt-3">
+            <div class="col rounded d-flex align-items-center justify-content-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center">
                 <span class="material-symbols-outlined icon-pic ">
                   event
                 </span>
               </div>
-              <p class="text-light">Reminder</p>
+              <p class="text-light text-shortcut">Reminder</p>
             </div>
-            <div class="col rounded d-flex align-items-center justify-content-center flex-column mt-3">
+            <div class="col rounded d-flex align-items-center justify-content-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center">
                 <span class="material-symbols-outlined icon-pic ">
                   developer_guide
                 </span>
               </div>
-              <p class="text-light">My Journal</p>
+              <p class="text-light text-shortcut">My Journal</p>
             </div>
-            <div class="col rounded d-flex align-items-center justify-content-center flex-column mt-3">
-              <div class=" bg-light icon-box text-center rounded">
+            <div class="col rounded d-flex align-items-center justify-content-center flex-column wrap-icon-shortcut ">
+              <div class="bg-light icon-box text-center rounded">
                 <span class=" material-symbols-outlined icon-pic">
                     groups
                 </span>
               </div>
-              <p class="text-light">ConnectU</p>
+              <p class="text-light text-shortcut">ConnectU</p>
             </div>
         </div>   
 </div>
 
-<p class="mt-5 mb-5 fw-bold text-center">Post from ConnectU</p>
+<h3 class="mt-5 mb-5 fw-bold text-center">Post from ConnectU</h3>
 
 <div class="container d-flex justify-content-center mb-5">
   <div class="comment-box">
@@ -91,11 +91,11 @@
         <div class="d-flex flex-row align-items-center flex-wrap">
           <img src="img/Mushroom.png" class="mushroom" alt="">
           <h5 class="ms-3 mb-0">Mushroom</h5>
-          <div class="ms-4 d-flex flex-row align-items-center bg-primary rounded-5 p-2 text-light">
+          <div class="ms-4 d-flex flex-row align-items-center bg-primary rounded-5 text-light fs-5">
             <span class="material-symbols-outlined">
               check
               </span>
-            <h5 class="mb-0">Psychologist</h5>
+            <p class="mb-0">Psychologist</p>
           </div>
         </div>
         <p class="mb-1 mt-2">Life can be a balancing act, but today I found a moment of peace amidst the chaos. Took some time to meditate and center myself, and it made all the difference. Remember to prioritize self-care and find moments of stillness in your day. Your mental well-being is worth it. 🧘‍♂️ #SelfCare #Mindfulness</p>
