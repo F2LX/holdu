@@ -3,7 +3,12 @@
 @section('content')
 
 <div class="container">
-        
+    @if (session('success'))
+      <div class="alert alert-success mt-2" role="alert">
+            {{ session('success') }}
+        </div>
+    @endif
+
     <div class="d-flex flex-wrap w-100">
         <div class="wider p-2">
             <form class="d-flex mb-3 mt-4 gap-2" action="/connectu/search/req" method="get">

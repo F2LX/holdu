@@ -348,3 +348,9 @@ a.navbar-brand > img.logo {
     width: 100%;
     justify-content: center;
 }
+.btn-normal {
+    width: 200px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
