@@ -203,10 +203,10 @@ a.navbar-brand > img.logo {
     width: 100%;
     border-radius: 20px;
     color: white;
-    background: linear-gradient(180deg,#9ECD7D 0%, #3C6FD3 100%);
+    background: linear-gradient(180deg, #9ecd7d 0%, #3c6fd3 100%);
 }
 
-.category-bar ul{
+.category-bar ul {
     list-style-type: none;
     margin: 0;
     line-height: 40px;
@@ -225,7 +225,7 @@ a.navbar-brand > img.logo {
     flex-direction: column;
     height: 500px;
     color: white;
-    background: linear-gradient(180deg,#9ECD7D 0%, #3C6FD3 100%);
+    background: linear-gradient(180deg, #9ecd7d 0%, #3c6fd3 100%);
 }
 
 /* End ConnectU */
@@ -296,10 +296,10 @@ a.navbar-brand > img.logo {
     width: 100%;
     border-radius: 20px;
     color: white;
-    background: linear-gradient(180deg,#9ECD7D 0%, #3C6FD3 100%);
+    background: linear-gradient(180deg, #9ecd7d 0%, #3c6fd3 100%);
 }
 
-.category-bar ul{
+.category-bar ul {
     list-style-type: none;
     margin: 0;
     line-height: 40px;
@@ -318,7 +318,33 @@ a.navbar-brand > img.logo {
     flex-direction: column;
     height: 500px;
     color: white;
-    background: linear-gradient(180deg,#9ECD7D 0%, #3C6FD3 100%);
+    background: linear-gradient(180deg, #9ecd7d 0%, #3c6fd3 100%);
 }
 
 /* End ConnectU */
+
+.chat-box {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.chat-place {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    overflow: auto;
+    gap: 20px;
+}
+
+.form-size {
+    width: 80%;
+}
+
+.form-chat {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}

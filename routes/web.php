@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Routing\Route as ComponentRoutingRoute;
 
 Route::get('/', function () {
     return view('home.main');
@@ -25,9 +27,17 @@ Route::get('/connectu', function() {
     return view('user.connectu.home');
 });
 
-// ConnectU User Handler
-
-//Chat Page
-Route::get('/chat-page', function(){
+Route::get('/chat-page', function() {
     return view('user.chat');
 });
+
+Route::get('/my-journal',function(){
+    return view('user.journal');
+});
+
+Route::get('/my-journal/add',function(){
+    return view('user.addjournal');
+});
+
+
+// ConnectU User Handler
