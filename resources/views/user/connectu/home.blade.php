@@ -7,6 +7,7 @@
     <div class="d-flex flex-wrap w-100">
         <div class="wider p-2">
             <form class="d-flex mb-3 mt-4 gap-2" action="/connectu/search/req" method="get">
+                @csrf
                 <input type="text" name="" id="" class="form-control" placeholder="Search Here...">
                 <button type="submit" class="btn btn-primary px-5 py-1">
                     <span class="material-symbols-outlined">
@@ -17,7 +18,8 @@
         
 
             <div class="w-100">
-                <form action="" class="w-100" method="post">
+                <form action="/connectu/post" class="w-100" method="post">
+                    @csrf
                     <textarea class="w-100 textarea-connectu" name="content" id="" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
                     <button type="submit" class="btn btn-primary">
                         Submit

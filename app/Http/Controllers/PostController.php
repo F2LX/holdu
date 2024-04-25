@@ -14,7 +14,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        
+        return view('connectu.home');
     }
 
     /**
@@ -30,7 +30,14 @@ class PostController extends Controller
      */
     public function store(StorePostRequest $request)
     {
-        //
+        $data = $request->validate([
+            "content" => "required",
+        ]);
+
+        $data['user_id']=auth()->user()->id;
+
+        Post::create($data);
+        return redirect()->back()->with('success','Post uploaded successfully');
     }
 
     /**
@@ -44,17 +51,21 @@ class PostController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Post $post)
+    public function edit($id)
     {
-        //
+        return view(); // Edit page not exist
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePostRequest $request, Post $post)
+    public function update(UpdatePostRequest $request, $id)
     {
-        //
+        $user = Post::find($id)->user()->id;
+        if ($user->id == auth()->user()->id) {
+            // Validate update if requester id == post owner
+        }
+        return redirect();
     }
 
     /**
