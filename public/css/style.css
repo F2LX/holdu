@@ -354,3 +354,7 @@ a.navbar-brand > img.logo {
     height: 300px;
     border: none;
 }
+
+.w-50 {
+    width: 50%;
+}
