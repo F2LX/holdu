@@ -62,4 +62,8 @@ Route::get('/mediGuide',function(){
 Route::get('/mediTrack',function(){
     return view('user.meditationTrack');
 });
+
+Route::get('/priceplan',function(){
+    return view('home.priceplan');
+});
 // ConnectU User Handler
