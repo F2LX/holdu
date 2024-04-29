@@ -9,6 +9,23 @@
 }
 
 @media only screen and (max-width: 650px) {
+    .chat-place {
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
+    .sana-profile-pic {
+        width: 100%;
+    }
+    .container:has(.chat-place) {
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .bubble-chat {
+        width: 70% !important;
+    }
+
     .wider {
         width: 100%;
     }

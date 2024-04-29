@@ -32,7 +32,7 @@
 <h3 class="mt-5 mb-5 fw-bold text-center">How are you feeling today?</h3>
 
 <div class="container d-flex justify-content-center">
-        <div class="shortcut-box bg-primary p-3 bg-success rounded-5">
+        <div class="shortcut-box p-3 rounded-5">
             <div class="col rounded d-flex align-items-center justify-content-center   flex-column">
               <div class="bg-light d-flex rounded icon-box justify-content-center wrap-icon-shortcut">
                 <img src="img/SanaPic 5.png" class="sana-pic" alt="">
