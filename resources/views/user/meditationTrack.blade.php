@@ -9,9 +9,24 @@
 
         <div class="container mt-5">
             <h2>Nature Sound</h2>
-            <div class="d-flex flex-column w-100 overflow-auto ">
-                <div class="d-flex w-100 p-3 rounded-4">
+            <div class="n-sound mt-3">
+                <div class="d-flex w-100 p-3 rounded-4 bg-light">
                     <h2>Forest</h2>
+                </div>
+                <div class="d-flex w-100 p-3 rounded-4 bg-light">
+                    <h2>Wind</h2>
+                </div>
+                <div class="d-flex w-100 p-3 rounded-4 bg-light">
+                    <h2>Peaceful Nature</h2>
+                </div>
+                <div class="d-flex w-100 p-3 rounded-4 bg-light">
+                    <h2>Forest 2</h2>
+                </div>
+                <div class="d-flex w-100 p-3 rounded-4 bg-light">
+                    <h2>Kiss The Rain</h2>
+                </div>
+                <div class="d-flex w-100 p-3 rounded-4 bg-light">
+                    <h2>River Flows In You</h2>
                 </div>
             </div>
         </div>

@@ -27,6 +27,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+    
 </div>
 {{-- End carousel --}}
 <div class="container-fluid p-0">
