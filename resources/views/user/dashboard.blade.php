@@ -33,43 +33,35 @@
 
 <div class="container d-flex justify-content-center">
         <div class="shortcut-box bg-primary p-3 bg-success rounded-5">
-            <div class="col rounded d-flex align-items-center justify-content-center   flex-column">
+            <div class="col rounded d-flex align-items-center justify-content-center flex-column">
               <div class="bg-light d-flex rounded icon-box justify-content-center wrap-icon-shortcut">
                 <img src="img/SanaPic 5.png" class="sana-pic" alt="">
               </div>
-              <p class="text-light text-shortcut">Chat with Sana</p>
+              <p class="text-light mb-0">Chat Sana</p>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center">
-                <span class="material-symbols-outlined icon-pic ">
-                  self_improvement
-                </span>
+                <img src="img/Meditation.png" class="sana-pic" alt="">
               </div>
-              <p class="text-light text-shortcut">Meditation</p>
+              <p class="text-light mb-0">Meditation</p>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center">
-                <span class="material-symbols-outlined icon-pic ">
-                  event
-                </span>
+                <img src="img/Reminder.png" class="sana-pic" alt="">
               </div>
-              <p class="text-light text-shortcut">Reminder</p>
+              <p class="text-light mb-0">Reminder</p>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center">
-                <span class="material-symbols-outlined icon-pic ">
-                  developer_guide
-                </span>
+                <img src="img/Journaal.png" class="sana-pic" alt="">
               </div>
-              <p class="text-light text-shortcut">My Journal</p>
+              <p class="text-light mb-0">My Journal</p>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center flex-column wrap-icon-shortcut ">
               <div class="bg-light icon-box text-center rounded">
-                <span class=" material-symbols-outlined icon-pic">
-                    groups
-                </span>
+                <img src="img/Community.png" class="sana-pic" alt="">
               </div>
-              <p class="text-light text-shortcut">ConnectU</p>
+              <p class="text-light mb-0">ConnectU</p>
             </div>
         </div>   
 </div>
@@ -91,14 +83,14 @@
         <div class="d-flex flex-row align-items-center flex-wrap">
           <img src="img/Mushroom.png" class="mushroom" alt="">
           <h5 class="ms-3 mb-0">Mushroom</h5>
-          <div class="ms-4 d-flex flex-row align-items-center bg-primary rounded-5 text-light fs-5">
+          <div class="ms-4 d-flex flex-row align-items-center bg-primary rounded-5 text-light fs-5 p-2">
             <span class="material-symbols-outlined">
               check
               </span>
-            <p class="mb-0">Psychologist</p>
+            <p class="fs-6 mb-0">Psychologist</p>
           </div>
         </div>
-        <p class="mb-1 mt-2">Life can be a balancing act, but today I found a moment of peace amidst the chaos. Took some time to meditate and center myself, and it made all the difference. Remember to prioritize self-care and find moments of stillness in your day. Your mental well-being is worth it. 🧘‍♂️ #SelfCare #Mindfulness</p>
+        <p class="mb-1 mt-2">Just wanted to share a little moment of joy from my day. Today, I stumbled upon a beautiful patch of wildflowers on my walk home from work. It might seem small, but it really brightened my day and reminded me to appreciate the beauty in the world around us. Sometimes it's the little things that make all the difference. 🌼 #Gratitude #NatureWalk</p>
         <p class="fs-6 mb-1">129 replies</p>
       </div>
     </div>
