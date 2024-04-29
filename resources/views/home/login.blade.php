@@ -23,6 +23,12 @@
             <img src="img/Rectangle 10.png"  alt="" class="rounded login-pic">
           </div>
           <div class="kotak-login">
+            @if (session('error'))
+              <div class="alert alert-danger" role="alert">
+                {{ session('error') }}
+              </div>
+            @endif
+            
             <h2 class="fw-bold text-center text-light mb-5">Login</h2>
               <form class="form-login" method="POST" action="/login/validate">
                 @csrf

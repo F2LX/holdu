@@ -40,7 +40,7 @@ class AuthController extends Controller
             return redirect()->intended('/dashboard');
         } else {
             // Login failed
-            return redirect('/login')->with("error","Wrong Email or Password");
+            return redirect('/login')->with("error","Wrong Email or Password!");
         }
     }
     /**
