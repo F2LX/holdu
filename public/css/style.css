@@ -417,40 +417,9 @@ a.navbar-brand > img.logo {
     height: fit-content;
 }
 
-#chatbox {
-    width: 100%;
-    height: 400px;
-    border: 1px solid #ccc;
-    overflow-y: auto;
-}
-
-#chat-messages {
-    padding: 10px;
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-#user-input {
-    width: 100%;
-    padding: 5px;
-    margin: 5px;
-}
-
 button {
     padding: 5px 10px;
     margin: 5px;
-}
-
-.chat-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    padding: 10px;
-    max-width: 100%;
-    overflow-y: auto;
-    max-height: 300px;
 }
 
 .width-90 {
