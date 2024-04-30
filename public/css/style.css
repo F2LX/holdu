@@ -415,6 +415,7 @@ a.navbar-brand > img.logo {
 .fit-content {
     width: 25%;
     height: fit-content;
+    width: fit-content;
 }
 
 button {
