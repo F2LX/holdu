@@ -79,7 +79,7 @@ a.navbar-brand > img.logo {
     width: 100%;
 }
 
-.sm-row-box:has(.kotak-login,.kotak-login-2) {
+.sm-row-box:has(.kotak-login, .kotak-login-2) {
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -368,6 +368,7 @@ a.navbar-brand > img.logo {
     width: 100%;
     height: 70vh;
     overflow: auto;
+    overflow-x: hidden;
     gap: 20px;
 }
 
@@ -409,4 +410,14 @@ a.navbar-brand > img.logo {
 .fit-content {
     width: 25%;
     height: fit-content;
+    width: fit-content;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.width-90 {
+    width: 90%;
 }

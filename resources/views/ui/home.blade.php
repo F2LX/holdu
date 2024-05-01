@@ -37,13 +37,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link {{ ($title === "home") ? 'active' : '' }}" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pricing">Pricing</a>
+                <a class="nav-link {{ ($title === "pricing") ? 'active' : '' }}" href="/pricing">Pricing</a>
               </li>
               @if(auth()->user())
               <li class="nav-item">

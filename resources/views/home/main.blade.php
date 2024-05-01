@@ -47,6 +47,7 @@
   <h1 class="ms-4 mt-5 fw-bold stroke-white">Your life does matters.</h1>
   
   <div class="container-fluid bg-custom-home border rounded-1">
+    
     <div class="row align-item-center">
       <div class="col-md order-md-1 d-flex justify-content-center pt-4">
         <img class="home-shaming" src="img/Body_shaming.png" alt="">
@@ -63,6 +64,7 @@
   </div>
   
   <div class="container-xl mt-5">
+    
     <div class="row">
       <div class="col-md order-md-1 d-flex justify-content-center">
         <img class="w-100" src="img/image 2.png" alt="">

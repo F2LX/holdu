@@ -29,8 +29,8 @@
                     Forum</li>
                 <li>Reminder</li>
             </ul>
-            <h5 class="fw-bold text-light">Rp75.000,-/month</h5>
-            <h3 class="fw-bold text-light">Rp50.000,-/month</h3>
+            <h5 class="fw-bold text-light text-decoration-line-through">Rp75.000,-/month</h5>
+            <h2 class="fw-bold text-light">Rp50.000,-/month</h2>
             <div class="rounded-4 bg-light p-3">
                 <h3 class="text-center fw-bold">Subscribe</h3>
             </div>

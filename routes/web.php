@@ -9,7 +9,9 @@ use Illuminate\Support\Facades\Route;
 use Symfony\Component\Routing\Route as ComponentRoutingRoute;
 
 Route::get('/', function () {
-    return view('home.main');
+    return view('home.main',[
+        "title" => "home"
+    ]);
 });
 
 // Auth Controller
@@ -63,7 +65,9 @@ Route::get('/mediTrack',function(){
     return view('user.meditationTrack');
 });
 
-Route::get('/priceplan',function(){
-    return view('home.priceplan');
+Route::get('/pricing',function(){
+    return view('home.priceplan',[
+        "title" => "pricing"
+    ]);
 });
 // ConnectU User Handler
