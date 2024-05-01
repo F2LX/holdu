@@ -21,6 +21,9 @@
     {{-- Preconnect Google Icons --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    {{-- Preloader --}}
+    <link rel="stylesheet" href="{{ asset("css/preloader.css") }}">
+
   </head>
 
   <body>
@@ -42,18 +45,38 @@
               <li class="nav-item">
                 <a class="nav-link" href="/pricing">Pricing</a>
               </li>
+              @if(auth()->user())
               <li class="nav-item">
-                <a class="nav-link btn btn-light" href="/login">Login</a>
+                <a class="nav-link" href="/dashboard">Dashboard</a>
+              </li>
+              @endif
+              @if (auth()->user())
+              <li class="nav-item">
+                <a class="nav-link" href="/logout"><span class="material-symbols-outlined">
+                  logout
+                  </span></a>
+              </li>
+              @endif
+              <li class="nav-item">
+                @if (!auth()->user())
+                 <a class="nav-link btn btn-light" href="/login">Login</a>
+                @else
+                 <a class="nav-link btn btn-light d-flex justify-content-center align-items-center" href="/profile"><span class="material-symbols-outlined pe-2">
+                  account_circle
+                  </span>{{ auth()->user()->name }}</a>
+                @endif
               </li>
             </ul>
           </div>
         </div>
       </nav>
       {{-- End Navbar --}}
-
+      @include('ui.preloader')
       <div class="container-fluid m-0 p-0">
         @yield('content')
       </div>
+
+    <script src="{{ asset("js/preloader.js") }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

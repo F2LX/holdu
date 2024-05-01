@@ -34,34 +34,34 @@
 <div class="container d-flex justify-content-center">
         <div class="shortcut-box p-3 rounded-5">
             <div class="col rounded d-flex align-items-center justify-content-center   flex-column">
-              <div class="bg-light d-flex rounded icon-box justify-content-center wrap-icon-shortcut">
+              <div class="bg-light d-flex rounded icon-box justify-content-center align-items-center wrap-icon-shortcut">
                 <img src="img/SanaPic 5.png" class="sana-pic" alt="">
               </div>
-              <p class="text-light mb-0">Chat Sana</p>
+              <p class="text-light mb-0 text-desc">Chat Sana</p>
             </div>
-            <div class="col rounded d-flex align-items-center justify-content-center flex-column wrap-icon-shortcut ">
-              <div class="bg-light rounded icon-box text-center">
+            <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
+              <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
                 <img src="img/Meditation.png" class="sana-pic" alt="">
               </div>
-              <p class="text-light mb-0">Meditation</p>
+              <p class="text-light mb-0 text-desc">Meditation</p>
             </div>
-            <div class="col rounded d-flex align-items-center justify-content-center flex-column wrap-icon-shortcut ">
-              <div class="bg-light rounded icon-box text-center">
+            <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
+              <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
                 <img src="img/Reminder.png" class="sana-pic" alt="">
               </div>
-              <p class="text-light mb-0">Reminder</p>
+              <p class="text-light mb-0 text-desc">Reminder</p>
             </div>
-            <div class="col rounded d-flex align-items-center justify-content-center flex-column wrap-icon-shortcut ">
-              <div class="bg-light rounded icon-box text-center">
+            <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
+              <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
                 <img src="img/Journaal.png" class="sana-pic" alt="">
               </div>
-              <p class="text-light mb-0">My Journal</p>
+              <p class="text-light mb-0 text-desc">My Journal</p>
             </div>
-            <div class="col rounded d-flex align-items-center justify-content-center flex-column wrap-icon-shortcut ">
-              <div class="bg-light icon-box text-center rounded">
+            <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
+              <div class="bg-light icon-box text-center rounded d-flex justify-content-center align-items-center">
                 <img src="img/Community.png" class="sana-pic" alt="">
               </div>
-              <p class="text-light mb-0">ConnectU</p>
+              <p class="text-light mb-0 text-desc">ConnectU</p>
             </div>
         </div>   
 </div>

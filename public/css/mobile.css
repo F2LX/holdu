@@ -9,6 +9,37 @@
 }
 
 @media only screen and (max-width: 650px) {
+    .connect-box {
+        width: 100% !important;
+    }
+    .comment-box > .row {
+        flex-direction: column !important;
+    }
+    .comment-box > .row > .col {
+        width: 100% !important;
+    }
+    .wrap-icon-shortcut {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .icon-box {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .shortcut-box {
+        margin: 0 !important;
+    }
+    .icon-box {
+        width: 30px;
+        border-radius: 18px !important;
+    }
+    .shortcut-box > .col {
+        width: 10% !important;
+        height: 80px;
+    }
+    .text-desc {
+        font-size: 11px !important;
+    }
     .chat-place {
         width: 100% !important;
         margin: 0;
