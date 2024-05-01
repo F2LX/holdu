@@ -103,6 +103,312 @@
     </div>
   </div>
 </div>
+{{-- Modals --}}
+<div class="modal fade" id="question-1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Mood Analysis</h1>
+        {{-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
+      </div>
+      <div class="modal-body">
+        <h3>  Have you felt low on energy in the past 14 days?</h3>
+      </div>
+      <div class="modal-footer d-flex flex-row align-items-center justify-content-center">
+          <p>Disagree</p>         
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="1" > 
+              <span>1</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio"> 
+              <input type="radio" name="1" value="2" > 
+              <span>2</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="3" > 
+              <span>3</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="4" > 
+              <span>4</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="5" > 
+              <span>5</span>
+             </label> 
+          </div> 
+          <p>Agree</p>
+      </div>
+      <div class="button mt-4 text-left">
+        <button class="btn btn-primary" data-bs-target="#question-2" data-bs-toggle="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="question-2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Mood Analysis</h1>
+        {{-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
+      </div>
+      <div class="modal-body">
+        <h3>Have you had any thoughts of harming yourself or others?</h3>
+      </div>
+      <div class="modal-footer d-flex flex-row align-items-center justify-content-center">
+          <p>Disagree</p>         
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="1" > 
+              <span>1</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio"> 
+              <input type="radio" name="1" value="2" > 
+              <span>2</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="3" > 
+              <span>3</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="4" > 
+              <span>4</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="5" > 
+              <span>5</span>
+             </label> 
+          </div> 
+          <p>Agree</p>
+      </div>
+      <div class="button mt-4 text-left">
+        <button class="btn btn-primary" data-bs-target="#question-3" data-bs-toggle="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="question-3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Mood Analysis</h1>
+        {{-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
+      </div>
+      <div class="modal-body">
+        <h3>Are you finding it difficult to concentrate or focus on tasks?</h3>
+      </div>
+      <div class="modal-footer d-flex flex-row align-items-center justify-content-center">
+          <p>Disagree</p>         
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="1" > 
+              <span>1</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio"> 
+              <input type="radio" name="1" value="2" > 
+              <span>2</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="3" > 
+              <span>3</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="4" > 
+              <span>4</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="5" > 
+              <span>5</span>
+             </label> 
+          </div> 
+          <p>Agree</p>
+      </div>
+      <div class="button mt-4 text-left">
+        <button class="btn btn-primary" data-bs-target="#question-4" data-bs-toggle="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="question-4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Mood Analysis</h1>
+        {{-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
+      </div>
+      <div class="modal-body">
+        <h3>Are you feeling more irritable or easily frustrated than usual in the past 14 days?</h3>
+      </div>
+      <div class="modal-footer d-flex flex-row align-items-center justify-content-center">
+          <p>Disagree</p>         
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="1" > 
+              <span>1</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio"> 
+              <input type="radio" name="1" value="2" > 
+              <span>2</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="3" > 
+              <span>3</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="4" > 
+              <span>4</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="5" > 
+              <span>5</span>
+             </label> 
+          </div> 
+          <p>Agree</p>
+      </div>
+      <div class="button mt-4 text-left">
+        <button class="btn btn-primary" data-bs-target="#question-5" data-bs-toggle="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="question-5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Mood Analysis</h1>
+        {{-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
+      </div>
+      <div class="modal-body">
+        <h3>Have you been feeling more anxious or worried than usual?</h3>
+      </div>
+      <div class="modal-footer d-flex flex-row align-items-center justify-content-center">
+          <p>Disagree</p>         
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="1" > 
+              <span>1</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio"> 
+              <input type="radio" name="1" value="2" > 
+              <span>2</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="3" > 
+              <span>3</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="4" > 
+              <span>4</span>
+             </label> 
+          </div> 
+          <div class="col text-center"> 
+            <label class="radio p-0"> 
+              <input type="radio" name="1" value="5" > 
+              <span>5</span>
+             </label> 
+          </div> 
+          <p>Agree</p>
+      </div>
+      <div class="button mt-4 text-left">
+        <button class="btn btn-primary" data-bs-target="#welcome" data-bs-toggle="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="welcome" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">WELCOME</h1>
+        {{-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
+      </div>
+      <div class="modal-body">
+        <h3>Take a deep breath and embark on your journey to inner peace.</h3>
+      </div>
+      <div class="button mt-4 d-flex justify-content-center">
+        <div>
+          <button class="btn btn-primary" data-bs-target="#welcome" data-bs-toggle="modal"><span class=" text-light material-symbols-outlined arrow-icon">
+            arrow_circle_right
+            </span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-primary" data-bs-target="#question-1" data-bs-toggle="modal">Open first modal</button>
+{{-- End of modals --}}
+
+{{-- Radio in modals --}}
+{{-- <div class="container mt-5 mb-5 d-flex justify-content-center "> 
+  <div class="card"> 
+    <div class="p-3"> 
+      <div class="first text-center"> 
+        <h3 class="mt-2">Thanks you</h3> 
+        <p class="text-black-50">Thanks for your order, will be delivered soon</p> 
+      </div> 
+      <div class="border p-3 rounded"> 
+          <div class="row"> 
+            <div class="col-md-3"> 
+              <label class="radio"> 
+                <input type="radio" name="experience" value="Bad Experience" > 
+                <span>Bad Experience</span> </label> 
+            </div> 
+            <div class="col-md-3"> 
+                <label class="radio"> <input type="radio" name="experience" value="Good Experience"> 
+                  <span>Good Experience</span> </label> 
+            </div> 
+            <div class="col-md-3"> 
+                    <label class="radio"> <input type="radio" name="experience" value="Great Experience" checked> <span>Great Experience</span> </label> 
+            </div> 
+            <div class="col-md-3"> 
+              <label class="radio"> <input type="radio" name="experience" value="Amazing Experience"> <span>Amzng Experience</span> </label> 
+            </div> 
+          </div> 
+        </div> 
+        <div class="button mt-4 text-right"> <button class="btn btn-success submit-button">Submit</button> </div> 
+    </div> 
+  </div> 
+</div> --}}
+{{-- End Radio --}}
 
     
 @endsection
