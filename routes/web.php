@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\JournalController;
+use App\Http\Controllers\ChatSessionController;
 
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
@@ -43,9 +44,7 @@ Route::get('/connectu', function() {
     return view('user.connectu.home');
 });
 
-Route::get('/chat-page', function() {
-    return view('user.chat');
-});
+Route::get('/chat', [ChatSessionController::class,'index']);
 
 Route::get('/profile',function(){
     return view('user.profile');

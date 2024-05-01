@@ -11,7 +11,7 @@ class Chat extends Model
 {
     use HasFactory;
 
-    protected $fillable=['date','is_bot','sender_id','content'];
+    protected $fillable=['date','is_bot','sender_id','message'];
 
     public function user(): BelongsTo
     {
