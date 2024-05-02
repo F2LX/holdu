@@ -26,7 +26,7 @@
                         <img src="img/SanaPic 5.png" class="sana-profile-pic" alt="">
                     </div>
                     <div class="col-8 bg-light p-4 rounded-4 bubble-chat">
-                        <p class="mb-0 text-message">{{ $message->message }}</p>
+                        <p class="mb-0 text-message">{!! $message->message !!}</p>
                         <p class="mb-0 text-end text-date">{{ $message->created_at }}</p>
                     </div>
                 </div>
