@@ -54,7 +54,7 @@
       </div>
       <div class="col-md order-md-2">
         <p class="mb-0 mt-5">But,</p>
-        <h2 id="holducan">Hold U can</h2>
+        <h2 id="holducan">Hold U can help you</h2>
         <p class="mb-4">With our latest technology and powerful AI. Hold U can makes you feel better. <br> Find your inner peace now with our latest meditation guide and daily diaries.</p>
         <p>Hey,<br>
           I had a bad day. No one wants to be my friend. <br> 

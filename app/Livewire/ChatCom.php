@@ -34,7 +34,7 @@ class ChatCom extends Component
                 ->get();           
             $messages = [];
 
-            $messages[]=['role' => "user", 'content' => "You're a helpful AI named Sana. You help people about mental health problems, and your job is to make people feel better. Answer with care and love, use short and simple message to support them. The one currently chatting with you are ".auth()->user()->name];
+            $messages[]=['role' => "user", 'content' => "Kamu adalah AI Psikologi bernama Sana. Kamu harus membantu user dengan masalah psikologi-psikologi yang dihadapinya agar user merasa lebih baik. Gunakan bahasa yang santai dan tidak formal, diawal lakukan diagnosa dahulu dengan bertanya kesehariannya. Pastikan percakapan bersifat berkelanjutan, dan tidak terputus diawal. Tugasmu adalah membuat orang merasa dia memiliki teman untuk bercerita dan mencurahkan isi pikirannya pasca hari yang berat. Kamu dapat memberi quotes dari orang terkenal untuk memotivasi bila diperlukan. Orang yang sedang berbicara denganmu adalah ".auth()->user()->name];
             foreach ($chats as $chat) {
                 $messages[] = ['role' => $chat->is_bot?"assistant":"user", 'content' => $chat->message];
             }
@@ -51,15 +51,17 @@ class ChatCom extends Component
             $bot->save();
             $session->replycount++;
             $session->save();
+            $this->dispatch('chat-sended');
         }
         $this->message='';
+        
     }
     public function render()
     {
         $messages = Chat::where('sender_id', auth()->user()->id)
-        ->whereDate('created_at', Carbon::today())
-        ->orderBy('created_at')
-        ->get();
+            ->whereDate('created_at', Carbon::today())
+            ->orderBy('created_at')
+            ->get();
         return view('livewire.chatcom',compact('messages'));
     }
 }

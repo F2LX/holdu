@@ -6,8 +6,8 @@
             <div class="d-flex justify-content-center mb-3">
                 <img class="rounded-3 mushroom" src="img/Tomatoes.png" alt="">
             </div>
-            <h5>Iyan Matius Sihombing</h5>
-            <p>Iyanmatius@gmail.com</p>
+            <h5>{{ $user->name }}</h5>
+            <p>{{ $user->email }}</p>
 
             <div class="d-flex flex-column w-100 p-4">
                 <div class="d-flex flex-row justify-content-between">

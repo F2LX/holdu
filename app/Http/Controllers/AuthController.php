@@ -67,4 +67,9 @@ class AuthController extends Controller
         User::create($data);
         return redirect("/login")->with("success","Account has been created!");
     }
+    public function profile()
+    {
+        $user=User::find(auth()->user()->id);
+        return view('user.profile',compact('user'));
+    }
 }
