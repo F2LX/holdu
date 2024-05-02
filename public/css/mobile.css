@@ -12,6 +12,9 @@
     .connect-box {
         width: 100% !important;
     }
+    .text-message {
+        font-size: 15px;
+    }
     .comment-box > .row {
         flex-direction: column !important;
     }
@@ -64,7 +67,7 @@
         width: 100%;
     }
     #carouselExampleIndicators {
-        border-radius: 7px !important;
+        border-radius: 0 !important;
     }
     .shortcut-box {
         width: 100%;

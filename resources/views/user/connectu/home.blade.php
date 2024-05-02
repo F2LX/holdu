@@ -47,11 +47,8 @@
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#postModal">
                             View Post
                         </button>
-                        
                     </form>
                 </div>
-                
-                
             </div>
         </div>
         <div class="sidebar p-2">

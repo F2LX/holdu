@@ -8,7 +8,7 @@
     </div>
 
     <div class="d-flex flex-row w-100 gap-5 mt-5 justify-content-center">
-        <div class="fit-content d-flex flex-column bg-light p-4 rounded-4">
+        <div class="fit-content d-flex flex-column bg-light p-4 rounded-4 free-box">
             <h2 class="fw-bold text-center">Free</h2>
             <ul class="mt-4">
                 <li>Journal</li>
@@ -17,7 +17,7 @@
                     Forum</li>
             </ul>
         </div>
-        <div class="fit-content d-flex flex-column bg-success p-4 rounded-4">
+        <div class="fit-content d-flex flex-column bg-success p-4 rounded-4 premium-box">
             <h2 class="fw-bold text-center">Premium</h2>
             <ul class="mt-4">
                 <li>Chat with Sana</li>
@@ -31,9 +31,11 @@
             </ul>
             <h5 class="fw-bold text-light text-decoration-line-through">Rp75.000,-/month</h5>
             <h2 class="fw-bold text-light">Rp50.000,-/month</h2>
-            <div class="rounded-4 bg-light p-3">
-                <h3 class="text-center fw-bold">Subscribe</h3>
-            </div>
+            <a href="">
+              <div class="rounded-4 bg-light p-3 d-flex justify-content-center align-items-center">
+                  <h3 class="text-center fw-bold text-dark m-0 p-0">Subscribe</h3>
+              </div>
+            </a>
         </div>
     </div>
     <div class="container-xl mt-5">

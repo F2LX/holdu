@@ -7,6 +7,9 @@ body {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     background: #e9f3f5;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* Bootstrap custom styling */
@@ -489,4 +492,18 @@ label.radio input:checked + span {
 .submit-button:hover {
     background-color: #d32f2f !important;
     border-color: #d32f2f !important;
+}
+
+.text-date {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.text-message {
+    font-size: 15px;
+}
+
+.premium-box {
+    background: linear-gradient(to bottom, #25434d, #4b879b) !important;
+    color: white;
 }
