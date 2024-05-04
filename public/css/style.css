@@ -507,3 +507,30 @@ label.radio input:checked + span {
     background: linear-gradient(to bottom, #25434d, #4b879b) !important;
     color: white;
 }
+
+.f-wrapper {
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.f-box {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: solid #25434d;
+    transition: background-color 0.4s ease, transform 0.6s ease;
+}
+
+.f-box:hover {
+    background-color: #4b879b;
+    transform: scale(1.1);
+}

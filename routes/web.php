@@ -67,4 +67,10 @@ Route::get('/pricing',function(){
         "title" => "pricing"
     ]);
 });
+
+Route::get('/features',function(){
+    return view('home.features',[
+        "title" => "pricing"
+    ]);
+});
 // ConnectU User Handler
