@@ -28,24 +28,30 @@
                         <p class="mb-0">Try my best to be with you</p>
                     </div>
                 </a>
-            </div>       
+            </div>             
             <div class="f-wrapper">
-                <div class="f-box rounded-4">
-                    <img class="rounded-3 mushroom" src="img/Community.png" alt="">
-                    <h3>ConnectU</h3>
-                    <p class="mb-0">Wanna be yours</p>
-                </div>
-                <div class="f-box rounded-4">
-                    <img class="rounded-3 mushroom" src="img/SanaPic 3.png" alt="">
-                    <h3>Sana</h3>
-                    <p class="mb-0">Understanding your feelings every time</p>
-                </div>
-                <div class="f-box rounded-4">
-                    <img class="rounded-3 mushroom" src="img/Tomato.png" alt="">
-                    <h3>Contact</h3>
-                    <p class="mb-0">Try my best to be with you</p>
-                </div>
-            </div>       
+                <a class="f-box rounded-4" href="#">
+                    <div class="">
+                        <img class="rounded-3 mushroom" src="img/Community.png" alt="">
+                        <h3>ConnectU</h3>
+                        <p class="mb-0">Wanna be yours</p>
+                    </div>
+                </a>
+                <a href="#" class="f-box rounded-4">
+                    <div>
+                        <img class="rounded-3 mushroom" src="img/SanaPic 3.png" alt="">
+                        <h3>Sana</h3>
+                        <p class="mb-0">Understanding your feelings every time</p>
+                    </div>
+                </a>
+                <a href="#" class="f-box rounded-4">
+                    <div>
+                        <img class="rounded-3 mushroom" src="img/Tomato.png" alt="">
+                        <h3>Contact</h3>
+                        <p class="mb-0">Try my best to be with you</p>
+                    </div>
+                </a>
+            </div>             
         </div>
     </div>
 @endsection
