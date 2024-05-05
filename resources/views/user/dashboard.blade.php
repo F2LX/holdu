@@ -359,7 +359,6 @@
     <div class="modal-content">
       <div class="modal-header justify-content-center">
         <h1 class="modal-title fs-5" id="exampleModalToggleLabel">WELCOME</h1>
-        {{-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
       </div>
       <div class="modal-body">
         <h3>Take a deep breath and embark on your journey to inner peace.</h3>
