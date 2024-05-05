@@ -12,6 +12,10 @@ body {
     padding: 0 !important;
 }
 
+.comment-form {
+    display: none; /* Semua form komentar disembunyikan secara default */
+}
+
 /* Bootstrap custom styling */
 .navbar-toggler {
     color: white !important;

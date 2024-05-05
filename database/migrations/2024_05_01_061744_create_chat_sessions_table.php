@@ -17,6 +17,8 @@ return new class extends Migration
             $table->date('date');
             $table->integer('replycount');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

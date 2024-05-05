@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('status');
             $table->string('role');
             $table->string('img')->nullable();
+            $table->string('category')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
