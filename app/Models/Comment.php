@@ -5,23 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
 
-
-class Post extends Model
+class comment extends Model
 {
     use HasFactory;
-
-    protected $fillable = ['content','user_id'];
-
-    // Initialize many to one relations to user
+    protected $guarded=['id'];
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
-    public function comments(): HasMany
+
+    public function post(): BelongsTo
     {
-        return $this->hasMany(Comment::class);
+        return $this->belongsTo(Post::class);
     }
 }

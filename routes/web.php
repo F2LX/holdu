@@ -47,6 +47,8 @@ Route::get('/connectu', function() {
 Route::get('/chat', [ChatSessionController::class,'index']);
 
 Route::get('/profile',[AuthController::class,'profile']);
+Route::post('/profile/username',[AuthController::class,'handleUsername']);
+
 Route::get('/reminder',function(){
     return view('user.reminder');
 });
