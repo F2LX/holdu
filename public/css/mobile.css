@@ -10,6 +10,10 @@
     .f-wrapper {
         flex-wrap: wrap;
     }
+
+    .kotak-login-2 {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -86,5 +90,9 @@
     }
     .col {
         width: 100% !important;
+    }
+
+    .kotak-login-2 {
+        display: none !important;
     }
 }
