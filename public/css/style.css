@@ -470,8 +470,8 @@ label.radio span {
     align-items: center;
 }
 label.radio input:checked + span {
-    border-color: #d32f2f;
-    background-color: #d32f2f;
+    border-color: #25434d;
+    background-color: #25434d;
     color: #fff;
 }
 .area {
@@ -479,14 +479,14 @@ label.radio input:checked + span {
 }
 .area:focus {
     box-shadow: none;
-    border-color: #d32f2f !important;
+    border-color: #25434d !important;
 }
 .submit-button,
 .submit-button:active,
 .submit-button:visited,
 .submit-button:focus {
-    background-color: #d32f2f !important;
-    border-color: #d32f2f !important;
+    background-color: #25434d !important;
+    border-color: #25434d !important;
     color: #fff !important;
     box-shadow: none;
     text-transform: uppercase;
@@ -494,8 +494,8 @@ label.radio input:checked + span {
     padding-right: 35px;
 }
 .submit-button:hover {
-    background-color: #d32f2f !important;
-    border-color: #d32f2f !important;
+    background-color: #25434d !important;
+    border-color: #25434d !important;
 }
 
 .text-date {
@@ -519,7 +519,7 @@ label.radio input:checked + span {
     flex-direction: row;
     /* flex-wrap: wrap; */
     margin-top: 10px;
-    gap: 15px;
+    gap: 30px;
 }
 
 .f-box {
@@ -560,4 +560,8 @@ label.radio input:checked + span {
     font-size: 14px;
     padding: 0 !important;
     margin: 0 !important;
+}
+
+.mt-10 {
+    margin-top: 100px;
 }

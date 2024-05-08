@@ -9,7 +9,7 @@
 
     {{-- Import HoldU CSS --}}
     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
-
+    <link rel="stylesheet" href="{{ asset("css/mobile.css") }}">
     {{-- Preconnect Poppins from Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,7 @@
                   <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div> --}}
                 <button type="submit" class="btn btn-primary w-100">Login</button>
-                <p class="ms-5 mt-2 text-light">Already have an account? <a href="/register" class="ms-1 text-light text-decoration-none fw-bold">Register now!</a></p>  
+                <p class="mt-2 text-light text-center">Already have an account? <a href="/register" class="ms-1 text-light text-decoration-none fw-bold">Register now!</a></p>  
               </form>
           </div>
         </div>

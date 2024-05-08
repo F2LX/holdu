@@ -33,35 +33,35 @@
 
 <div class="container d-flex justify-content-center">
         <div class="shortcut-box p-3 rounded-5">
-            <div class="col rounded d-flex align-items-center justify-content-center   flex-column">
+            <div class="col rounded d-flex align-items-center justify-content-center flex-column">
               <div class="bg-light d-flex rounded icon-box justify-content-center align-items-center wrap-icon-shortcut">
-                <img src="img/SanaPic 5.png" class="sana-pic" alt="">
+                <a href=""><img src="img/SanaPic 5.png" class="sana-pic" alt=""></a>
               </div>
-              <p class="text-light mb-0 text-desc">Chat Sana</p>
+              <a href=""><p class="text-light mb-0 text-desc">Chat Sana</p></a>              
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
-                <img src="img/Meditation.png" class="sana-pic" alt="">
+                <a href=""><img src="img/Meditation.png" class="sana-pic" alt=""></a>
               </div>
-              <p class="text-light mb-0 text-desc">Meditation</p>
+              <a href=""><p class="text-light mb-0 text-desc">Meditation</p></a>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
-                <img src="img/Reminder.png" class="sana-pic" alt="">
+                <a href=""><img src="img/Reminder.png" class="sana-pic" alt=""></a>
               </div>
-              <p class="text-light mb-0 text-desc">Reminder</p>
+              <a href=""><p class="text-light mb-0 text-desc">Reminder</p></a>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
-                <img src="img/Journaal.png" class="sana-pic" alt="">
+                <a href=""><img src="img/Journaal.png" class="sana-pic" alt=""></a>
               </div>
-              <p class="text-light mb-0 text-desc">My Journal</p>
+              <a href=""><p class="text-light mb-0 text-desc">My Journal</p></a>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light icon-box text-center rounded d-flex justify-content-center align-items-center">
-                <img src="img/Community.png" class="sana-pic" alt="">
+                <a href=""><img src="img/Community.png" class="sana-pic" alt=""></a>
               </div>
-              <p class="text-light mb-0 text-desc">ConnectU</p>
+              <a href=""><p class="text-light mb-0 text-desc">ConnectU</p></a>
             </div>
         </div>   
 </div>
@@ -94,17 +94,17 @@
         <p class="fs-6 mb-1">129 replies</p>
       </div>
     </div>
-    <div class="d-flex justify-content-center align-items-center rounded-4 connect-box flex-column text-light">
+    <div class="d-flex justify-content-center align-items-center rounded-4 connect-box flex-column text-light p-3">
       <p class="fs-4">More At <br>
         ConnectU</p>
-        <a href="#"><span class=" text-light material-symbols-outlined arrow-icon">
+        <a href="/connectu"><span class=" text-light material-symbols-outlined arrow-icon">
           arrow_circle_right
           </span> </a>  
     </div>
   </div>
 </div>
 {{-- Modals --}}
-<div class="modal fade" id="question-1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+<div class="modal fade" id="question-1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header justify-content-center">
@@ -154,7 +154,7 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="question-2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+<div class="modal fade" id="question-2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header justify-content-center">
@@ -204,7 +204,7 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="question-3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+<div class="modal fade" id="question-3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header justify-content-center">
@@ -254,7 +254,7 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="question-4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+<div class="modal fade" id="question-4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header justify-content-center">
@@ -304,7 +304,7 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="question-5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+<div class="modal fade" id="question-5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header justify-content-center">
@@ -354,7 +354,7 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="welcome" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+<div class="modal fade" id="welcome" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header justify-content-center">
@@ -373,7 +373,8 @@
     </div>
   </div>
 </div>
-<button class="btn btn-primary" data-bs-target="#question-1" data-bs-toggle="modal">Open first modal</button>
+{{-- button for modals --}}
+{{-- <button class="btn btn-primary" data-bs-target="#question-1" data-bs-toggle="modal">Open first modal</button> --}}
 {{-- End of modals --}}
 
 {{-- Radio in modals --}}
@@ -409,5 +410,42 @@
 </div> --}}
 {{-- End Radio --}}
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+// $(document).ready(function(){
+//   $('#question-1').modal('show');
+
+//   $('#question-1').on('hide.bs.modal', function (event) {
+//     // Check if all questions are answered
+//     if (!allQuestionsAnswered()) {
+//       // If not all questions are answered, prevent the modal from closing
+//       event.preventDefault();
+//       event.stopImmediatePropagation();
+//       // Optionally, you can provide a message to the user indicating that all questions must be answered
+//       alert("Please answer all questions before closing the modal.");
+//     }
+//   });
+
+//   function allQuestionsAnswered() {
+//   // You can implement your logic to check if all questions are answered here
+//   // For example, you can check if all radio inputs are selected or if all required fields are filled
+//   // Return true if all questions are answered, otherwise return false
+//   var radInput = $('#question-1 input[type= "radio"]');
+//   var cnt = 0;
+//   for(var i = 0 ; i < radInput.length ; i++){
+//     if(radInput[i].checked){
+//       cnt++
+//     }
+//     if(cnt > 0){
+//       return True
+//     }
+//   }
+// }
+
+// });
+</script>
     
 @endsection

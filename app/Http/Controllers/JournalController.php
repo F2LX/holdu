@@ -71,7 +71,7 @@ class JournalController extends Controller
         $journal->content = $validatedData['content'];
         $journal->save();
 
-        return redirect()->back()->with('success','Journal updated successfully');
+        return redirect('/journal')->with('success','Journal updated successfully');
     }
     
 

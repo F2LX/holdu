@@ -12,6 +12,9 @@
     }
     .container {
         width: 100% !important;
+
+    .kotak-login-2 {
+        display: none !important;
     }
 }
 
@@ -89,5 +92,9 @@
     }
     .col {
         width: 100% !important;
+    }
+
+    .kotak-login-2 {
+        display: none !important;
     }
 }
