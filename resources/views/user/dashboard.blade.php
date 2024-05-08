@@ -149,7 +149,7 @@
           <p>Agree</p>
       </div>
       <div class="button mt-4 text-left">
-        <button class="btn btn-primary" data-bs-target="#question-2" data-bs-toggle="modal">Submit</button>
+        <button id="submmit1" class="btn btn-primary" data-bs-target="#question-2" data-bs-toggle="modal">Submit</button>
       </div>
     </div>
   </div>
@@ -425,7 +425,7 @@
 //       event.preventDefault();
 //       event.stopImmediatePropagation();
 //       // Optionally, you can provide a message to the user indicating that all questions must be answered
-//       alert("Please answer all questions before closing the modal.");
+//       // alert("Please answer all questions before closing the modal.");
 //     }
 //   });
 
@@ -435,17 +435,51 @@
 //   // Return true if all questions are answered, otherwise return false
 //   var radInput = $('#question-1 input[type= "radio"]');
 //   var cnt = 0;
-//   for(var i = 0 ; i < radInput.length ; i++){
-//     if(radInput[i].checked){
-//       cnt++
-//     }
-//     if(cnt > 0){
-//       return True
+//     for(var i = 0 ; i < radInput.length ; i++){
+//       if(radInput[i].checked){
+//         cnt+=1;
+//       }
+//       if(cnt == 1){
+//         return True
+//       }
 //     }
 //   }
-// }
 
 // });
+
+$(document).ready(function(){
+  $('#question-1').modal('show');
+
+  $('#question-1').on('hide.bs.modal', function (event) {
+    // Check if all questions are answered
+    if (!allQuestionsAnswered()) {
+      // If not all questions are answered, prevent the modal from closing
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      // Optionally, you can provide a message to the user indicating that all questions must be answered
+      // alert("Please answer all questions before closing the modal.");
+    }
+  });
+
+  $('#submit1').on('click', function() {
+    var selectedOption = $('input[name="1"]:checked');
+    if (selectedOption) {
+      $('#question-1').modal('hide');
+      $('#question-2').modal('show');
+    } else {
+      alert("Please select an option!");
+      
+    }
+  });
+
+  function allQuestionsAnswered() {
+    // You can implement your logic to check if all questions are answered here
+    // For example, you can check if all radio inputs are selected or if all required fields are filled
+    // Return true if all questions are answered, otherwise return false
+    var radInput = $('#question-1 input[type="radio"]:checked');
+    return radInput.length > 0;
+  }
+});
 </script>
     
 @endsection

@@ -95,4 +95,12 @@
     .kotak-login-2 {
         display: none !important;
     }
+
+    .sm-row-box:has(.kotak-login, .kotak-login-2) {
+        width: 100% !important;
+    }
+
+    .translate {
+        translate: 2;
+    }
 }
