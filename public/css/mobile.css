@@ -10,6 +10,9 @@
     .f-wrapper {
         flex-wrap: wrap;
     }
+    .container {
+        width: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 650px) {

@@ -12,8 +12,8 @@ class ConnectuMain extends Component
     public $search;
     public $paginate=15;
     
-    public $commentmsg;
-
+    public $commentmsgs=[];
+    public $replymsgs=[];
     public function save()
     {
         $post = new Post;
@@ -26,14 +26,25 @@ class ConnectuMain extends Component
     {
         // Search function here
     }
-    public function comment($postId)
-    {
-        $comment=new Comment;
-        $comment->content=$this->commentmsg;
-        $comment->user_id=auth()->user()->id;
-        $comment->post_id=$postId;
-        $comment->save();
-        $this->commentmsg="";
+    public function comment($postId,$parentId)
+    {   
+        if ($parentId == null) {
+            $comment=new Comment;
+            $comment->content=$this->commentmsgs[$postId];
+            $comment->user_id=auth()->user()->id;
+            $comment->post_id=$postId;
+            $comment->save();
+        } else {
+            $reply = new Comment;
+            $reply->content=$this->commentmsgs[$postId];
+            $reply->user_id=auth()->user()->id;
+            $reply->post_id=$postId;
+            $reply->parent_id=$parentId;
+            $reply->save();
+        }
+        
+        $this->commentmsgs[$postId]="";
+        $this->dispatch('comment-posted');
     }
 
     public function render()
