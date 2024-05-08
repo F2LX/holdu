@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="kotak">
-      <div class="container d-flex justify-content-center">
+      <div class="container d-flex justify-content-center login-box">
         <div class="sm-row-box align-items-center mt-5 rounded">
           <div class="kotak-login-2">
             <img src="img/Rectangle 10.png"  alt="" class="rounded login-pic">

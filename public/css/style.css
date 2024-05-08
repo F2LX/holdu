@@ -119,7 +119,7 @@ a.navbar-brand > img.logo {
 
 .login-pic {
     width: 90%;
-    height: 700px;
+    /* height: 700px; */
 }
 
 .kotak {
@@ -537,6 +537,15 @@ label.radio input:checked + span {
 .f-box:hover {
     background-color: #4b879b;
     transform: scale(1.1);
+}
+
+.mt-10 {
+    margin-top: 100px;
+}
+
+.login-box {
+    display: flex;
+    padding: 0;
 }
 .thumbnail-comment {
     width: 25px !important;

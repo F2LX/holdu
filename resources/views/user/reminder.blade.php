@@ -2,10 +2,9 @@
 
 @section('content')
     <div class="container">
-
         <p class="mb-0 mt-5">Monday , 3 December 2024</p>
         <h3 class="fw-bold">Mindful Moments: Your HoldU Reminder Hub</h3>
-        <div class="d-flex flex-column gap-3 mt-4">
+        {{-- <div class="d-flex flex-column gap-3 mt-4">
             <div class="d-flex flex-column">
                 <h4>27 December 2024</h4>
                 <div class="d-flex w-100 flex-direction-row w-100">
@@ -74,6 +73,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
+    </div>
+    <div class="container">
+        <a href="#" class="connect-box d-flex justify-content-center p-3 rounded-4">
+            <h2>Click me!</h2>
+        </a>
     </div>
 @endsection

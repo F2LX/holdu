@@ -149,7 +149,7 @@
           <p>Agree</p>
       </div>
       <div class="button mt-4 text-left">
-        <button class="btn btn-primary" data-bs-target="#question-2" data-bs-toggle="modal">Submit</button>
+        <button id="submmit1" class="btn btn-primary" data-bs-target="#question-2" data-bs-toggle="modal">Submit</button>
       </div>
     </div>
   </div>
@@ -410,42 +410,5 @@
 </div> --}}
 {{-- End Radio --}}
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script>
-// $(document).ready(function(){
-//   $('#question-1').modal('show');
-
-//   $('#question-1').on('hide.bs.modal', function (event) {
-//     // Check if all questions are answered
-//     if (!allQuestionsAnswered()) {
-//       // If not all questions are answered, prevent the modal from closing
-//       event.preventDefault();
-//       event.stopImmediatePropagation();
-//       // Optionally, you can provide a message to the user indicating that all questions must be answered
-//       alert("Please answer all questions before closing the modal.");
-//     }
-//   });
-
-//   function allQuestionsAnswered() {
-//   // You can implement your logic to check if all questions are answered here
-//   // For example, you can check if all radio inputs are selected or if all required fields are filled
-//   // Return true if all questions are answered, otherwise return false
-//   var radInput = $('#question-1 input[type= "radio"]');
-//   var cnt = 0;
-//   for(var i = 0 ; i < radInput.length ; i++){
-//     if(radInput[i].checked){
-//       cnt++
-//     }
-//     if(cnt > 0){
-//       return True
-//     }
-//   }
-// }
-
-// });
-</script>
     
 @endsection
