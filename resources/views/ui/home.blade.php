@@ -73,10 +73,10 @@
       @yield('content')
       {{-- End Navbar --}}
       @include('ui.preloader')
-    <footer class="w-100 h-100 bg-dark">
+    <footer class="w-100 h-100 pt-5 bg-dark">
       <div class="container w-100">
         <div class="footer-box">
-          <div class="col-4 d-flex flex-column">
+          <div class="col-4 d-flex flex-column w-100-mobile">
             <img class="sit-pic" src="img/white.png" alt="">
             <p class="text-light"><span class="fw-bold">HoldU, </span>Your sanctuary for mental <br> wellness. Explore personalized <br> resources, connect with a <br> supportive community, and <br> embark on your journey to inner <br> balance.</p>
           </div>

@@ -118,4 +118,7 @@
     .translate {
         translate: 2;
     }
+    .w-100-mobile {
+        width: 100%;
+    }
 }

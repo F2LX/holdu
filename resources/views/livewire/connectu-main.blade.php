@@ -37,11 +37,25 @@
     @endif
 @endif
     <div class="posts w-100" id="posts">
+        <div class="w-100 d-flex justify-content-center align-items-center">
+            <button class="btn btn-primary rounded-5 d-flex justify-content-center align-items-center mr-2" wire:click="$refresh"><span class="material-symbols-outlined">
+                refresh
+                </span> Refresh</button>
+        </div>
+        
         @foreach ($posts as $post)
         <div class="post">
-            <div class="d-flex align-items-center post-header">
+            <div class="d-flex align-items-center post-header justify-content-between
+            w-100">
+                <div class="d-flex justify-content-center align-items-center">
                 <img class="thumbnail-connectu" src="{{ asset("img/".$post->user->category) }}" alt="">
                 <p class="m-0 fw-bold">{{ $post->user->username }}</p>
+                </div>
+                <div>
+                @if(auth()->user()->id==$post->user->id)
+                <button class="btn btn-danger float-right" wire:click="delete({{ $post->id }})" type="button">Delete</button>
+                @endif
+                </div>
             </div>
             
             <p>{{ $post->content }}</p>
@@ -57,6 +71,9 @@
                                 <span class="fw-bold">{{ $comment->user->username }}</span> <br>
                                 {{ $comment->content }}</p><br>
                                 <button class="btn btn-default reply-btn" id="btn-show-form-{{ $comment->id }}" type="button" data-comment-id="{{ $comment->id }}">Reply</button>
+                                @if(auth()->user()->id==$post->user->id)
+                                    <button class="btn btn-danger float-right" wire:click="deletecomment({{ $comment->id }})" type="button">Delete</button>
+                                @endif
                                 <form id="reply-form-{{ $comment->id }}" wire:submit="comment({{ $post->id }},{{ $comment->id }})" class="w-100 gap-2" style="display: none ">
                                     <input type="text" class="form-control form-comment" wire:model="replymsgs.{{ $post->id }}" placeholder="Comment Here">
                                     <button class="btn btn-primary btn-send" type="submit">Send</button>
