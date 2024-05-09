@@ -1,5 +1,5 @@
 <div>
-    <form class="d-flex mb-3 mt-4 gap-2" wire:action="search">
+    <form class="d-flex mb-3 mt-4 gap-2" wire:submit="search">
         <input type="text" id="" wire:model="keyword" class="form-control" placeholder="Search Here...">
         <button type="submit" class="btn btn-primary px-5 py-1">
             <span class="material-symbols-outlined">
@@ -7,6 +7,8 @@
                 </span>
         </button>
     </form>
+
+    @if (!$users)
     <div class="w-100">
         <form wire:submit="save">
             <textarea class="w-100 textarea-connectu" wire:model="content" id="" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
@@ -15,8 +17,25 @@
             </button>
         </form>
     </div>
+    @endif
+    
+    @if ($users)
+    <a class="btn btn-primary mb-3 mt-1" href="#posts">See Posts</a>
+        @foreach($users as $user)
+        <div class="w-100 bg-white p-3 d-flex align-items-center">
+            <img class="thumbnail-connectu" src="{{ asset("img/".$user->category) }}" alt="">
+            <p class="fw-bold">{{ $user->username }}</p>
+        </div>
+        @endforeach
+        <div x-intersect.full="$wire.loadMoreUsers()" class="w-100 d-flex justify-content-center align-items-center text-center p-4">
+            <div wire:loading wire:target="loadMoreUsers" 
+                  class="loading-indicator">
+                     Loading more posts...  
+            </div>
+          </div>
+    @endif
 
-    <div class="posts w-100">
+    <div class="posts w-100" id="posts">
         @foreach ($posts as $post)
         <div class="post">
             <div class="d-flex align-items-center post-header">
@@ -69,6 +88,12 @@
             </form>
         </div>
         @endforeach
+        <div x-intersect.full="$wire.loadMore()" class="w-100 d-flex justify-content-center align-items-center text-center p-4">
+            <div wire:loading wire:target="loadMore" 
+                  class="loading-indicator">
+                     Loading more posts...  
+            </div>
+          </div>
     </div>
     @script
         <script>
