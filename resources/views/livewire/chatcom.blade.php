@@ -46,7 +46,7 @@
             </div>
             @endif
             @endforeach
-            <div id="loading-bubble-wrap">
+            <div id="loading-bubble-wrap" class="display-none-loading">
                 <div class="chat-box d-flex flex-column">
                     <div class="d-flex flex-row-reverse">
                         <h6 class="mb-0 width-90">Sana</h6>
@@ -86,24 +86,32 @@
             </div>
         </form>
         @script
-            <script>
-                const loadingDiv = document.getElementById("loading-bubble-wrap");
-                const chatDiv = document.getElementById("chat-place");
-                chatDiv.scrollTop = chatDiv.scrollHeight;
-                $wire.on('chat-sended', () => {
-                    // Toggle kelas CSS untuk menampilkan atau menyembunyikan loading
-                    loadingDiv.classList.toggle('display-none-loading');
+        <script>
+            const loadingDiv = document.getElementById("loading-bubble-wrap");
+        const chatDiv = document.getElementById("chat-place");
+        chatDiv.scrollTop = chatDiv.scrollHeight;
 
-                    setTimeout(() => {
-                        const lastMessage = chatDiv.lastElementChild;
-                        lastMessage.scrollIntoView({ behavior: 'smooth' });
+        $wire.on('chat-sended', () => {
+            setTimeout(() => {
+                const lastMessage = chatDiv.lastElementChild;
+                lastMessage.scrollIntoView({ behavior: 'smooth' });
+            }, 100); // Delay 100ms
+        });
 
-                        // Sembunyikan loading setelah beberapa saat
-                        setTimeout(() => {
-                            loadingDiv.classList.toggle('display-none-loading');
-                        }, 500); // Atur waktu penundaan sesuai kebutuhan
-                    }, 100); // Delay 100ms
-                });
-            </script>
+        $wire.on('bot-loading', () => {
+            setTimeout(() => {
+                loadingDiv.classList.remove('display-none-loading');
+            }, 100); // Delay 100ms
+        });
+
+        $wire.on('bot-finished', () => {
+            setTimeout(() => {
+                loadingDiv.classList.add('display-none-loading');
+                setTimeout(() => {
+                    chatDiv.scrollTop = chatDiv.scrollHeight; // Scroll ke bawah setelah loading selesai
+                }, 200); // Delay 100ms
+            }, 100); // Delay 100ms
+        });
+        </script>
         @endscript
 </div>

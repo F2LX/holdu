@@ -23,6 +23,8 @@ class ConnectuMain extends Component
     public $commentmsgs=[];
     public $replymsgs=[];
 
+    public $userId;
+
     public function loadMore(): void  
     {  
         $this->on_page += 5;  
@@ -81,6 +83,17 @@ class ConnectuMain extends Component
 
     public function render()
     {   
+        if ($this->userId) {
+            $this->posts=Post::where('user_id',$this->userId)->with(['user', 'comments'])
+            ->orderBy('created_at', 'desc')
+            ->take($this->on_page)
+            ->get();
+            
+            return view('livewire.connectu-main',[
+                "posts" => $this->posts,
+                "is_profile" => true,
+            ]);
+        }
         if ($this->keyword == "") {
             $this->posts = Post::with(['user', 'comments'])
                 ->orderBy('created_at', 'desc')
@@ -88,12 +101,14 @@ class ConnectuMain extends Component
                 ->get();
 
             return view('livewire.connectu-main',[
-                'posts' => $this->posts
+                'posts' => $this->posts,
+                'is_profile' => false
             ]);
         } else {
             return view('livewire.connectu-main',[
                 'posts' => $this->posts,
-                'users' => $this->users
+                'users' => $this->users,
+                'is_profile' => false
             ]);
         }
     }

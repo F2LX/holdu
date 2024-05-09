@@ -1,4 +1,5 @@
 <div>
+@if (!$is_profile)
     <form class="d-flex mb-3 mt-4 gap-2" wire:submit="search">
         <input type="text" id="" wire:model="keyword" class="form-control" placeholder="Search Here...">
         <button type="submit" class="btn btn-primary px-5 py-1">
@@ -34,7 +35,7 @@
             </div>
           </div>
     @endif
-
+@endif
     <div class="posts w-100" id="posts">
         @foreach ($posts as $post)
         <div class="post">

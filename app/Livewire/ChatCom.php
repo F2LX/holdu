@@ -29,6 +29,8 @@ class ChatCom extends Component
             $this->sender_id=auth()->user()->id;
 
             Chat::create($this->only(['message','sender_id','date','is_bot']));
+            
+            $this->dispatch('bot-loading');
             $this->dispatch('chat-sended');
             // Split the function to refresh the livewire components.
             $this->js('$wire.ask()');
@@ -62,7 +64,10 @@ class ChatCom extends Component
         $bot->save();
         $session->replycount++;
         $session->save();
+        
+        $this->dispatch('bot-finished');
         $this->dispatch('chat-sended');
+        
     }
     public function render()
     {

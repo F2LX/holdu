@@ -3,6 +3,8 @@
 @section('content')
 
 <div class="container">
+
+
     <div class="d-flex flex-wrap w-100">
         <div class="wider p-2">
             @livewire('connectumain')

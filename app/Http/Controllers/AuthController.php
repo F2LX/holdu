@@ -114,4 +114,22 @@ class AuthController extends Controller
         $user->save();
         return redirect()->back();
     }
+
+    public function predict_Y(float $x1, float $x2)
+    {
+        $beta0=0;
+        $x1coeff=0.91559766609537;
+        $x2coeff=-0.21552508913301066;
+
+        // Indikator
+        // 1: Sangat Stress
+        // 2: Stress
+        // 3: Baik
+        // 4: Sangat Baik
+        $predicted_Y=floor($beta0+($x1coeff*$x1)+($x2coeff*$x2));
+        if ($predicted_Y==0) {
+            $predicted_Y=1;
+        }
+        return $predicted_Y;
+    }
 }

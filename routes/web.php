@@ -43,7 +43,8 @@ Route::get('/dashboard', function() {
 });
 
 Route::get('/connectu',[ConnectUController::class,'index']);
-Route::get('/search',[ConnectUController::class,'search']);
+Route::get('/info/{user:username}',[ConnectUController::class,'userinfo']);
+
 
 Route::get('/chat', [ChatSessionController::class,'index']);
 
@@ -75,10 +76,6 @@ Route::get('/features',function(){
     return view('home.features',[
         "title" => "pricing"
     ]);
-});
-
-Route::get('/info', function () {
-    return view('user.info');
 });
 
 Route::get('/error', function () {

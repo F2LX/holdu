@@ -481,6 +481,11 @@ label.radio input:checked + span {
     box-shadow: none;
     border-color: #25434d !important;
 }
+
+#chat-place {
+    scroll-behavior: smooth;
+}
+
 .submit-button,
 .submit-button:active,
 .submit-button:visited,
