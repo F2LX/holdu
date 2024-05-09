@@ -620,3 +620,22 @@ label.radio input:checked + span {
 .mt-footer {
     margin-top: 200px;
 }
+
+.footer-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.social-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-pic {
+    width: 10%;
+}

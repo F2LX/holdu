@@ -75,28 +75,28 @@
       @include('ui.preloader')
     <footer class="w-100 h-100 bg-dark">
       <div class="container w-100">
-        <div class="row">
-          <div class="col-4">
+        <div class="footer-box">
+          <div class="col-4 d-flex flex-column">
             <img class="sit-pic" src="img/white.png" alt="">
             <p class="text-light"><span class="fw-bold">HoldU, </span>Your sanctuary for mental <br> wellness. Explore personalized <br> resources, connect with a <br> supportive community, and <br> embark on your journey to inner <br> balance.</p>
           </div>
           <div class="col-4 d-flex flex-column gap-3 mt-3">
-            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
-              <img src="img/Instagram.png" alt="">
-              <h5 class="text-light mb-0">holduforever</h5>
+            <div class="social-box">
+              <img class="social-pic" src="img/Instagram.png" alt="">
+              <h6 class="text-light mb-0">holduforever</h6>
             </div>
-            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
-              <img src="img/X.png" alt="">
-              <h5 class="text-light mb-0">holduforever</h5>
+            <div class="social-box">
+              <img class="social-pic" src="img/X.png" alt="">
+              <h6 class="text-light mb-0">holduforever</h6>
             </div>
-            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
-              <img src="img/facebook.png" alt="">
-              <h5 class="text-light mb-0">holduforever</h5>
+            <div class="social-box">
+              <img class="social-pic" src="img/facebook.png" alt="">
+              <h6 class="text-light mb-0">holduforever</h6>
             </div>
           </div>
           <div class="col-4 d-flex flex-column mt-3">
             <h3 class="fw-bold text-light mb-0">Contact Us</h3>
-            <p class="text-light mb-0">Hotline: 021-23131</p>
+            <p class="text-light mb-0">Hotline: 021-2313-1201</p>
             <p class="text-light">Email: supportholdu@gmail.com</p>
           </div>
         </div>
