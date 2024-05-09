@@ -47,7 +47,7 @@
                   <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div> --}}
                 <button type="submit" class="btn btn-primary w-100">Register</button>
-                <p class="mt-2 text-light text-center">Already have an account? <a href="#" class="fw-bold text-light text-decoration-none" >Login now!</a></p>
+                <p class="mt-2 text-light text-center">Already have an account? <a href="/login" class="fw-bold text-light text-decoration-none" >Login now!</a></p>
               </form>
           </div>
         </div>
