@@ -12,6 +12,6 @@ class ConnectUController extends Controller
      */
     public function index()
     {
-        return view('connectu.home');
+        return view('user.connectu.home');
     }
 }

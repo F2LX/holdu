@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Post;
+use App\Models\User;
 use App\Models\Comment;
 
 class ConnectuMain extends Component
@@ -14,17 +15,14 @@ class ConnectuMain extends Component
     
     public $commentmsgs=[];
     public $replymsgs=[];
-    public function save()
+
+    public function save()    
     {
         $post = new Post;
         $post->user_id=auth()->user()->id;
         $post->content=$this->content;
         $post->save();
         $this->content="";
-    }
-    public function search()
-    {
-        // Search function here
     }
     public function comment($postId,$parentId)
     {   
@@ -36,13 +34,14 @@ class ConnectuMain extends Component
             $comment->save();
         } else {
             $reply = new Comment;
-            $reply->content=$this->commentmsgs[$postId];
+            $reply->content=$this->replymsgs[$postId];
             $reply->user_id=auth()->user()->id;
             $reply->post_id=$postId;
             $reply->parent_id=$parentId;
             $reply->save();
         }
         
+        $this->replymsgs[$postId]="";
         $this->commentmsgs[$postId]="";
         $this->dispatch('comment-posted');
     }

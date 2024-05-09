@@ -1,14 +1,12 @@
 <div>
-    <form class="d-flex mb-3 mt-4 gap-2" wire:submit="search">
-        <input type="text" name="" id="" wire:model="keyword" class="form-control" placeholder="Search Here...">
+    <form class="d-flex mb-3 mt-4 gap-2" wire:action="search">
+        <input type="text" id="" wire:model="keyword" class="form-control" placeholder="Search Here...">
         <button type="submit" class="btn btn-primary px-5 py-1">
             <span class="material-symbols-outlined">
                 search
                 </span>
         </button>
     </form>
-
-
     <div class="w-100">
         <form wire:submit="save">
             <textarea class="w-100 textarea-connectu" wire:model="content" id="" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
@@ -40,7 +38,7 @@
                                 {{ $comment->content }}</p><br>
                                 <button class="btn btn-default reply-btn" id="btn-show-form-{{ $comment->id }}" type="button" data-comment-id="{{ $comment->id }}">Reply</button>
                                 <form id="reply-form-{{ $comment->id }}" wire:submit="comment({{ $post->id }},{{ $comment->id }})" class="w-100 gap-2" style="display: none ">
-                                    <input type="text" class="form-control form-comment" wire:model="commentmsgs.{{ $post->id }}" placeholder="Comment Here">
+                                    <input type="text" class="form-control form-comment" wire:model="replymsgs.{{ $post->id }}" placeholder="Comment Here">
                                     <button class="btn btn-primary btn-send" type="submit">Send</button>
                                 </form>
                                 @foreach ($post->comments as $commentReply)
@@ -74,27 +72,16 @@
     </div>
     @script
         <script>
-            document.querySelectorAll('.reply-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const commentId = btn.dataset.commentId; // Get the commentId from dataset
+            document.addEventListener('click', function(event) {
+                if (event.target.classList.contains('reply-btn')) {
+                    const commentId = event.target.dataset.commentId;
                     const replyForm = document.getElementById(`reply-form-${commentId}`);
-                    
                     if (replyForm) {
-                        replyForm.style.display = replyForm.style.display === 'none' ? 'flex' : 'none'; // Toggle the display property
+                        replyForm.style.display = replyForm.style.display === 'none' ? 'flex' : 'none';
                     }
-                });
+                }
             });
-
-            $wire.on('comment-posted', () => {
-                btn.addEventListener('click', () => {
-                    const commentId2 = btn.dataset.commentId; // Get the commentId from dataset
-                    const replyForm2 = document.getElementById(`reply-form-${commentId}`);
-                    
-                    if (replyForm2) {
-                        replyForm2.style.display = replyForm2.style.display === 'none' ? 'flex' : 'none'; // Toggle the display property
-                    }
-                });   
-            });             
+           
         </script>
     @endscript
 </div>

@@ -20,13 +20,13 @@ return new class extends Migration
             $table->string('password');
             $table->date('premium_until')->nullable();
             $table->string('status');
+            $table->boolean('is_verified')->default(false);
             $table->string('role');
             $table->string('img')->nullable();
             $table->string('category')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
-
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
             $table->string('token');

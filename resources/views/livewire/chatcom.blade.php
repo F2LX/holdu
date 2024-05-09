@@ -46,6 +46,28 @@
             </div>
             @endif
             @endforeach
+            <div id="loading-bubble-wrap">
+                <div class="chat-box d-flex flex-column">
+                    <div class="d-flex flex-row-reverse">
+                        <h6 class="mb-0 width-90">Sana</h6>
+                    </div>
+                    <div class="d-flex flex-row mt-0">
+                        <div class="col-1">
+                            <img src="img/SanaPic 5.png" class="sana-profile-pic" alt="">
+                        </div>
+                        <div class="col-8 bg-light p-4 rounded-4 bubble-chat bubble-loading">
+                            <div class="mb-0 text-message">
+                                <div class="loader">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
     @if(session('status'))
@@ -65,14 +87,23 @@
         </form>
         @script
             <script>
+                const loadingDiv = document.getElementById("loading-bubble-wrap");
                 const chatDiv = document.getElementById("chat-place");
                 chatDiv.scrollTop = chatDiv.scrollHeight;
                 $wire.on('chat-sended', () => {
-                        setTimeout(() => {
+                    // Toggle kelas CSS untuk menampilkan atau menyembunyikan loading
+                    loadingDiv.classList.toggle('display-none-loading');
+
+                    setTimeout(() => {
                         const lastMessage = chatDiv.lastElementChild;
                         lastMessage.scrollIntoView({ behavior: 'smooth' });
-                        }, 100); // Delay 100ms
-                });             
+
+                        // Sembunyikan loading setelah beberapa saat
+                        setTimeout(() => {
+                            loadingDiv.classList.toggle('display-none-loading');
+                        }, 500); // Atur waktu penundaan sesuai kebutuhan
+                    }, 100); // Delay 100ms
+                });
             </script>
         @endscript
 </div>
