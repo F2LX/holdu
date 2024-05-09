@@ -17,6 +17,18 @@
     .kotak-login-2 {
         display: none !important;
     }
+
+    .footer-box {
+        flex-direction: column;
+    }
+
+    .social-box {
+        justify-content: left;
+    }
+
+    .social-pic {
+        width: 20%;
+    }
 }
 
 @media only screen and (max-width: 650px) {
