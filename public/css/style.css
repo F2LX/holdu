@@ -616,3 +616,7 @@ label.radio input:checked + span {
 .fs-mini {
     font-size: x-small;
 }
+
+.mt-footer {
+    margin-top: 200px;
+}
