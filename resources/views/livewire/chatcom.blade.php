@@ -40,7 +40,7 @@
                         <p class="mb-0 text-end text-date">{{ $message->created_at }}</p>
                     </div>
                     <div class="col-1">
-                        <img src="img/SanaPic 5.png" class="sana-profile-pic" alt="">
+                        <img src="{{ asset("img/".auth()->user()->category) }}" class="sana-profile-pic" alt="">
                     </div>
                 </div>
             </div>

@@ -648,3 +648,7 @@ label.radio input:checked + span {
 .social-pic {
     width: 10%;
 }
+
+footer {
+    margin-top: 40px;
+}

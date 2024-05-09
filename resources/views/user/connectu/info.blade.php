@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container mt-5">
-    <div class="row justify-content-center bg-primary pt-4 pb-4 rounded-3">
+    <div class="row justify-content-center bg-primary pt-4 pb-4 rounded-5">
         <div class="col-5 d-flex flex-column justify-content-center">
             <div class="rounded-5 d-flex align-item-center justify-content-center">
                 <img class="info-pic" src={{ asset("img/".$user->category) }} alt="">
