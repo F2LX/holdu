@@ -83,11 +83,11 @@
         <div class="d-flex flex-row align-items-center flex-wrap">
           <img src="img/Mushroom.png" class="mushroom" alt="">
           <h5 class="ms-3 mb-0">Mushroom</h5>
-          <div class="ms-4 d-flex flex-row align-items-center bg-primary rounded-5 text-light fs-5 p-2">
+          <div class="ms-4 d-flex flex-row align-items-center bg-primary rounded-5 text-light fs-5 p-1">
             <span class="material-symbols-outlined">
               check
               </span>
-            <p class="fs-6 mb-0">Psychologist</p>
+            <p class="mb-0 fs-mini">Psychologist</p>
           </div>
         </div>
         <p class="mb-1 mt-2">Just wanted to share a little moment of joy from my day. Today, I stumbled upon a beautiful patch of wildflowers on my walk home from work. It might seem small, but it really brightened my day and reminded me to appreciate the beauty in the world around us. Sometimes it's the little things that make all the difference. 🌼 #Gratitude #NatureWalk</p>

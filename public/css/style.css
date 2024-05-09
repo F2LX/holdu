@@ -576,7 +576,7 @@ label.radio input:checked + span {
 }
 
 .loader {
-    text-align: center;    
+    text-align: center;
 }
 .loader span {
     display: inline-block;
@@ -603,12 +603,16 @@ label.radio input:checked + span {
 }
 
 @keyframes loader {
-  0% {
-    opacity: 0.9;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 0.1;
-    transform: scale(1);
-  }
+    0% {
+        opacity: 0.9;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 0.1;
+        transform: scale(1);
+    }
+}
+
+.fs-mini {
+    font-size: x-small;
 }
