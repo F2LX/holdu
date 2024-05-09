@@ -35,33 +35,33 @@
         <div class="shortcut-box p-3 rounded-5">
             <div class="col rounded d-flex align-items-center justify-content-center flex-column">
               <div class="bg-light d-flex rounded icon-box justify-content-center align-items-center wrap-icon-shortcut">
-                <a href=""><img src="img/SanaPic 5.png" class="sana-pic" alt=""></a>
+                <a href="/chat"><img src="img/SanaPic 5.png" class="sana-pic" alt=""></a>
               </div>
-              <a href=""><p class="text-light mb-0 text-desc">Chat Sana</p></a>              
+              <a href="/chat"><p class="text-light mb-0 text-desc">Chat Sana</p></a>              
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
-                <a href=""><img src="img/Meditation.png" class="sana-pic" alt=""></a>
+                <a href="/mediGuide"><img src="img/Meditation.png" class="sana-pic" alt=""></a>
               </div>
-              <a href=""><p class="text-light mb-0 text-desc">Meditation</p></a>
+              <a href="/mediGuide"><p class="text-light mb-0 text-desc">Meditation</p></a>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
-                <a href=""><img src="img/Reminder.png" class="sana-pic" alt=""></a>
+                <a href="/reminder"><img src="img/Reminder.png" class="sana-pic" alt=""></a>
               </div>
-              <a href=""><p class="text-light mb-0 text-desc">Reminder</p></a>
+              <a href="/reminder"><p class="text-light mb-0 text-desc">Reminder</p></a>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
-                <a href=""><img src="img/Journaal.png" class="sana-pic" alt=""></a>
+                <a href="/journal"><img src="img/Journaal.png" class="sana-pic" alt=""></a>
               </div>
-              <a href=""><p class="text-light mb-0 text-desc">My Journal</p></a>
+              <a href="/journal"><p class="text-light mb-0 text-desc">My Journal</p></a>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light icon-box text-center rounded d-flex justify-content-center align-items-center">
-                <a href=""><img src="img/Community.png" class="sana-pic" alt=""></a>
+                <a href="/connectu"><img src="img/Community.png" class="sana-pic" alt=""></a>
               </div>
-              <a href=""><p class="text-light mb-0 text-desc">ConnectU</p></a>
+              <a href="/connectu"><p class="text-light mb-0 text-desc">ConnectU</p></a>
             </div>
         </div>   
 </div>

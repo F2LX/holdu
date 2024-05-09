@@ -574,3 +574,7 @@ label.radio input:checked + span {
 .mt-10 {
     margin-top: 100px;
 }
+
+.info-pic {
+    width: 50%;
+}
