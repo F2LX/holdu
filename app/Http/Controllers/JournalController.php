@@ -12,7 +12,7 @@ class JournalController extends Controller
      */
     public function index()
     {
-        $journals=Journal::all();
+        $journals=Journal::where('user_id',auth()->user()->id)->get();
         return view('user.journal.journal',compact('journals'));
     }
 
