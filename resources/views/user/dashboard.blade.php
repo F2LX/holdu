@@ -101,7 +101,5 @@
     </div>
   </div>
 </div>
-
-@livewire('modals')
     
 @endsection
