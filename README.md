@@ -37,17 +37,18 @@ Anda dapat menggunakan OpenAI API Key yang disediakan didalam .env.txt
 2. Jalankan "composer install" di direktori tersebut. Hal ini akan menginstall library yang dibutuhkan.
 3. Setelah itu, copy dan paste .env.txt dan rename menjadi .env. Masukkan kedalam direktori HoldU.
 
-Catatan: .env.txt akan disertakan di Google Classroom, mohon untuk menggunakan API key yang tersedia agar aplikasi berjalan dengan baik.
+- Catatan: .env.txt akan disertakan di Google Classroom, mohon untuk menggunakan API key yang tersedia agar aplikasi berjalan dengan baik.
 
 4. Ubah bagian berikut:
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=holdu
-DB_USERNAME=root
-DB_PASSWORD=
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=holdu
+- DB_USERNAME=root
+- DB_PASSWORD=
 
-Catatan: Anda dapat menyesuaikan tipe dan nama database, namun HoldU dites menggunakan environment tersebut.
+- Catatan: Anda dapat menyesuaikan tipe dan nama database, namun HoldU dites menggunakan environment tersebut. Apabila ingin menggunakan settingan sesuai dengan .env bawaan yang disertakan, maka Anda dapat membuat database baru dengan nama "holdu" di phpmyadmin.
+
 5. Jalan migrations dengan cara: php artisan migrate:fresh
 6. Aplikasi siap dijalankan di environment local dengan cara: php artisan serve
 
