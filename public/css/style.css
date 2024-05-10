@@ -503,6 +503,10 @@ label.radio input:checked + span {
     border-color: #25434d !important;
 }
 
+.float-right {
+    float: right !important;
+}
+
 .text-date {
     margin-top: 5px;
     font-size: 10px;
@@ -643,6 +647,10 @@ label.radio input:checked + span {
 
 .social-pic {
     width: 10%;
+}
+
+footer {
+    margin-top: 40px;
 }
 
 audio {

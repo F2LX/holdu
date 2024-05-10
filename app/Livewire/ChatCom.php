@@ -15,7 +15,6 @@ class ChatCom extends Component
     public $date;
     public $is_bot;
     public $sender_id;
-    public $loading = false;
 
     public function save() 
     {

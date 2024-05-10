@@ -25,7 +25,7 @@
         @foreach($users as $user)
         <div class="w-100 bg-white p-3 d-flex align-items-center">
             <img class="thumbnail-connectu" src="{{ asset("img/".$user->category) }}" alt="">
-            <p class="fw-bold">{{ $user->username }}</p>
+            <a href="info/{{ $user->username }}"><p class="fw-bold">{{ $user->username }}</p></a>
         </div>
         @endforeach
         <div x-intersect.full="$wire.loadMoreUsers()" class="w-100 d-flex justify-content-center align-items-center text-center p-4">
@@ -37,11 +37,25 @@
     @endif
 @endif
     <div class="posts w-100" id="posts">
+        <div class="w-100 d-flex justify-content-center align-items-center">
+            <button class="btn btn-primary rounded-5 d-flex justify-content-center align-items-center mr-2" wire:click="$refresh"><span class="material-symbols-outlined">
+                refresh
+                </span> Refresh</button>
+        </div>
+        
         @foreach ($posts as $post)
         <div class="post">
-            <div class="d-flex align-items-center post-header">
+            <div class="d-flex align-items-center post-header justify-content-between
+            w-100">
+                <div class="d-flex justify-content-center align-items-center">
                 <img class="thumbnail-connectu" src="{{ asset("img/".$post->user->category) }}" alt="">
-                <p class="m-0 fw-bold">{{ $post->user->username }}</p>
+                <a href="info/{{ $post->user->username }}"><p class="m-0 fw-bold">{{ $post->user->username }}</p></a>
+                </div>
+                <div>
+                @if(auth()->user()->id==$post->user->id)
+                <button class="btn btn-danger float-right" wire:click="delete({{ $post->id }})" type="button">Delete</button>
+                @endif
+                </div>
             </div>
             
             <p>{{ $post->content }}</p>
@@ -54,9 +68,12 @@
                         <img class="thumbnail-comment" src="{{ asset("img/".$comment->user->category) }}" alt="">
                         <div class="d-flex flex-direction-column flex-wrap w-100">
                             <p class="w-100 comment-text">
-                                <span class="fw-bold">{{ $comment->user->username }}</span> <br>
+                                <a href="info/{{ $comment->user->username }}"><span class="fw-bold">{{ $comment->user->username }}</span></a> <br>
                                 {{ $comment->content }}</p><br>
-                                <button class="btn btn-default reply-btn" id="btn-show-form-{{ $comment->id }}" type="button" data-comment-id="{{ $comment->id }}">Reply</button>
+                                <button class="btn btn-default reply-btn px-3" id="btn-show-form-{{ $comment->id }}" type="button" data-comment-id="{{ $comment->id }}">Reply</button>
+                                @if(auth()->user()->id==$comment->user->id)
+                                    <button class="btn btn-default reply-btn float-right ml-5" wire:click="deletecomment({{ $comment->id }})" type="button">Delete</button>
+                                @endif
                                 <form id="reply-form-{{ $comment->id }}" wire:submit="comment({{ $post->id }},{{ $comment->id }})" class="w-100 gap-2" style="display: none ">
                                     <input type="text" class="form-control form-comment" wire:model="replymsgs.{{ $post->id }}" placeholder="Comment Here">
                                     <button class="btn btn-primary btn-send" type="submit">Send</button>
@@ -68,8 +85,11 @@
                                             <img class="thumbnail-comment" src="{{ asset("img/".$commentReply->user->category) }}" alt="">
                                             <div class="d-flex flex-direction-column flex-wrap w-100">
                                                 <p class="w-100 comment-text">
-                                                    <span class="fw-bold">{{ $commentReply->user->username }}</span> <br>
+                                                    <a href="info/{{ $commentReply->user->username }}"><span class="fw-bold">{{ $commentReply->user->username }}</span></a> <br>
                                                     {{ $commentReply->content }}</p><br>
+                                                    @if(auth()->user()->id==$commentReply->user->id)
+                                                        <button class="btn btn-default reply-btn float-right ml-5" wire:click="deletecomment({{ $commentReply->id }})" type="button">Delete</button>
+                                                    @endif
                                             </div>
                                         </div>
                                     </div>

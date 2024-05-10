@@ -25,6 +25,22 @@ class ConnectuMain extends Component
 
     public $userId;
 
+    public function delete($postId)
+    {
+        $post = Post::find($postId);
+        if (auth()->user()->id == $post->user_id) {
+            Post::destroy($postId);
+        }
+    }
+
+    public function deletecomment($comId)
+    {
+        $com = Comment::find($comId);
+        if (auth()->user()->id == $com->user_id) {
+            Comment::destroy($comId);
+        }
+    }
+
     public function loadMore(): void  
     {  
         $this->on_page += 5;  

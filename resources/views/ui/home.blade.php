@@ -37,17 +37,17 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link {{ request()->is('/')? 'active' : '' }}" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/features">Features</a>
+                <a class="nav-link {{ request()->is('features')? 'active' : '' }}" href="/features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pricing">Pricing</a>
+                <a class="nav-link {{ request()->is('pricing')? 'active' : '' }}" href="/pricing">Pricing</a>
               </li>
               @if(auth()->user())
               <li class="nav-item">
-                <a class="nav-link" href="/dashboard">Dashboard</a>
+                <a class="nav-link {{ request()->is('dashboard')? 'active' : '' }}" href="/dashboard">Dashboard</a>
               </li>
               @endif
               @if (auth()->user())
@@ -73,14 +73,14 @@
       @yield('content')
       {{-- End Navbar --}}
       @include('ui.preloader')
-    <footer class="w-100 h-100 bg-dark mt-5">
+    <footer class="w-100 h-100 pt-5 bg-dark mt-5">
       <div class="container w-100">
         <div class="footer-box">
-          <div class="col-4 d-flex flex-column">
+          <div class="col-4 d-flex flex-column w-100-mobile">
             <img class="sit-pic" src="img/white.png" alt="">
             <p class="text-light"><span class="fw-bold">HoldU, </span>Your sanctuary for mental <br> wellness. Explore personalized <br> resources, connect with a <br> supportive community, and <br> embark on your journey to inner <br> balance.</p>
           </div>
-          <div class="col-4 d-flex flex-column gap-3 mt-3">
+          <div class="col-4 d-flex flex-column gap-3 mt-3 w-100-mobile">
             <div class="social-box">
               <img class="social-pic" src="img/Instagram.png" alt="">
               <h6 class="text-light mb-0">holduforever</h6>
@@ -94,7 +94,7 @@
               <h6 class="text-light mb-0">holduforever</h6>
             </div>
           </div>
-          <div class="col-4 d-flex flex-column mt-3">
+          <div class="col-4 d-flex flex-column mt-3 w-100-mobile">
             <h3 class="fw-bold text-light mb-0">Contact Us</h3>
             <p class="text-light mb-0">Hotline: 021-2313-1201</p>
             <p class="text-light">Email: supportholdu@gmail.com</p>
