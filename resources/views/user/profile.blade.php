@@ -11,10 +11,6 @@
 
             <div class="d-flex flex-column w-100 p-4">
                 <div class="d-flex flex-row justify-content-between">
-                    <p>ConnectU Post:</p>
-                    <p>1.900</p>
-                </div>
-                <div class="d-flex flex-row justify-content-between">
                     <p>Subscription Type:</p>
                     <p>Demo Account</p>
                 </div>

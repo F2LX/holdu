@@ -35,31 +35,31 @@
         <div class="shortcut-box p-3 rounded-5">
             <div class="col rounded d-flex align-items-center justify-content-center flex-column">
               <div class="bg-light d-flex rounded icon-box justify-content-center align-items-center wrap-icon-shortcut">
-                <a href="/chat"><img src="img/SanaPic 5.png" class="sana-pic" alt=""></a>
+                <a href="/chat"><img src="{{ asset("img/SanaPic 5.png") }}" class="sana-pic" alt=""></a>
               </div>
               <a href="/chat"><p class="text-light mb-0 text-desc">Chat Sana</p></a>              
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
-                <a href="/meditation"><img src="img/Meditation.png" class="sana-pic" alt=""></a>
+                <a href="/meditation"><img src="{{ asset("img/Meditation.png") }}" class="sana-pic" alt=""></a>
               </div>
               <a href="/meditation"><p class="text-light mb-0 text-desc">Meditation</p></a>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
-                <a href="/mood-history"><img src="img/Reminder.png" class="sana-pic" alt=""></a>
+                <a href="/mood-history"><img src="{{ asset("img/Reminder.png") }}" class="sana-pic" alt=""></a>
               </div>
-              <a href="/mood-history"><p class="text-light mb-0 text-desc">Mood History</p></a>
+              <a href="/mood-history"><p class="text-light mb-0 text-desc">Mood</p></a>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
-                <a href="/journal"><img src="img/Journaal.png" class="sana-pic" alt=""></a>
+                <a href="/journal"><img src="{{ asset("img/Journaal.png") }}" class="sana-pic" alt=""></a>
               </div>
               <a href="/journal"><p class="text-light mb-0 text-desc">My Journal</p></a>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light icon-box text-center rounded d-flex justify-content-center align-items-center">
-                <a href="/connectu"><img src="img/Community.png" class="sana-pic" alt=""></a>
+                <a href="/connectu"><img src="{{ asset("img/Community.png") }}" class="sana-pic" alt=""></a>
               </div>
               <a href="/connectu"><p class="text-light mb-0 text-desc">ConnectU</p></a>
             </div>

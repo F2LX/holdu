@@ -40,6 +40,14 @@ class Modals extends Component
         $this->scoring=$this->predict_Y($x1,$x2);
         $this->scoring=floor($this->scoring);
         $quiz = new Quiz;
+
+        $this->q1=$this->q1==null?3:$this->q1;
+        $this->q2=$this->q2==null?3:$this->q2;
+        $this->q3=$this->q3==null?3:$this->q3;
+        $this->q4=$this->q4==null?3:$this->q4;
+        $this->q5=$this->q5==null?3:$this->q5;
+
+
         $quiz->q1=$this->q1;
         $quiz->q2=$this->q2;
         $quiz->q3=$this->q3;
