@@ -7,7 +7,7 @@
 HoldU adalah AI Mental Wellness Companion yang dibuat oleh ALFEI. HoldU dilengkapi dengan Generative AI yang dapat membantu manusia dalam bidang psikologi dan kesehatan mental. Fitur utama HoldU:
 
 - Chat With Sana, Generative AI berbasis Text yang dapat menjadi teman bercerita pengguna.
-- ConnectU, temukan kehangatan dalam komunitas ConnectU yang anonim dan menjunjung tinggi privasi.
+- ConnectU, temukan kehangatan dalam sosial media ConnectU yang anonim dan menjunjung tinggi privasi.
 - Journal, cara baru untuk menulis buku harian.
 - Mood History, analisa mood harian dengan kecerdasan model Machine Learning & Artificial Intelligence.
 - Meditation, pelajari meditasi dengan panduan dan musik yang membantumu rileks.
