@@ -41,7 +41,7 @@
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
-                <a href="/meditation"><img src="{{ asset("img/Meditation.png") }}" class="sana-pic" alt=""></a>
+                <a href="/meditation"><img src="{{ asset("img/meditation.png") }}" class="sana-pic" alt=""></a>
               </div>
               <a href="/meditation"><p class="text-light mb-0 text-desc">Meditation</p></a>
             </div>
@@ -55,7 +55,7 @@
               <div class="bg-light rounded icon-box text-center d-flex justify-content-center align-items-center">
                 <a href="/journal"><img src="{{ asset("img/Journaal.png") }}" class="sana-pic" alt=""></a>
               </div>
-              <a href="/journal"><p class="text-light mb-0 text-desc">My Journal</p></a>
+              <a href="/journal"><p class="text-light mb-0 text-desc">Journal</p></a>
             </div>
             <div class="col rounded d-flex align-items-center justify-content-center align-items-center flex-column wrap-icon-shortcut ">
               <div class="bg-light icon-box text-center rounded d-flex justify-content-center align-items-center">
@@ -73,14 +73,14 @@
     <div class="row justify-content-center align-items-center gap-4">
       <div class="col bg-light rounded-4 p-3 pb-0">
         <div class="d-flex flex-row align-items-center">
-          <img src="img/Tomatoes.png" class="mushroom" alt="">
+          <img src="{{ asset("img/tomatoes.png") }}" class="mushroom" alt="">
           <h5 class="ms-3 mb-0">Tomato</h5>
         </div>
         <p class="mb-1 mt-2">Try ConnectU now! You can register and socialize anonymously without limits!</p>
       </div>
       <div class="col bg-light rounded-4 p-3 pb-0">
         <div class="d-flex flex-row align-items-center flex-wrap">
-          <img src="img/Mushroom.png" class="mushroom" alt="">
+          <img src="{{ asset("img/mushroom.png") }}" class="mushroom" alt="">
           <h5 class="ms-3 mb-0">Mushroom</h5>
           <div class="ms-4 d-flex flex-row align-items-center bg-primary rounded-5 text-light tag-verified">
             <span class="material-symbols-outlined">

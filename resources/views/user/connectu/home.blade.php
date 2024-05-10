@@ -7,7 +7,7 @@
 
     <div class="d-flex flex-wrap w-100">
         <div class="wider p-2">
-            @livewire('connectumain')
+            @livewire('connectu-main')
         </div>
         <div class="sidebar p-2">
             <div class="category-bar mt-4">
