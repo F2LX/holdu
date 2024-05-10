@@ -670,3 +670,39 @@ label.radio input:checked + span {
 footer {
     margin-top: 40px;
 }
+
+audio {
+    width: 100%; /* Adjust the width as needed */
+    /* background-color: #4b879b; Background color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding around the player */
+}
+
+/* Styles for the audio controls */
+audio::-webkit-media-controls-panel {
+    background-color: #25434d; /* Background color of the controls panel */
+    color: #fff; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for the play/pause button */
+audio::-webkit-media-controls-play-button {
+    color: antiquewhite; /* Color of the play button */
+}
+
+/* Styles for the volume control */
+audio::-webkit-media-controls-volume-slider {
+    background-color: #25434d; /* Background color of the volume slider */
+}
+
+/* Styles for the progress bar */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button {
+    color: #ffffff; /* Color of the progress bar */
+}
+
+.medicolors {
+    background: linear-gradient(to bottom, #25434d, #4b879b);
+}
