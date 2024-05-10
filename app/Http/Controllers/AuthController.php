@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 
 class AuthController extends Controller
 {
@@ -41,6 +42,9 @@ class AuthController extends Controller
      */
     public function index()
     {
+        if(auth()->user()) {
+            return redirect('/dashboard');
+        }
         return view('home.login');
     }
 
@@ -78,6 +82,9 @@ class AuthController extends Controller
 
     public function register()
     {
+        if(auth()->user()) {
+            return redirect('/dashboard');
+        }
         return view('home.register');
     }
 
@@ -114,22 +121,14 @@ class AuthController extends Controller
         $user->save();
         return redirect()->back();
     }
-
-    public function predict_Y(float $x1, float $x2)
+    public function logout(Request $request): RedirectResponse
     {
-        $beta0=0;
-        $x1coeff=0.91559766609537;
-        $x2coeff=-0.21552508913301066;
-
-        // Indikator
-        // 1: Sangat Stress
-        // 2: Stress
-        // 3: Baik
-        // 4: Sangat Baik
-        $predicted_Y=floor($beta0+($x1coeff*$x1)+($x2coeff*$x2));
-        if ($predicted_Y==0) {
-            $predicted_Y=1;
-        }
-        return $predicted_Y;
+        Auth::logout();
+ 
+        $request->session()->invalidate();
+     
+        $request->session()->regenerateToken();
+     
+        return redirect('/');
     }
 }

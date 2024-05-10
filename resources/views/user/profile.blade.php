@@ -16,11 +16,11 @@
                 </div>
                 <div class="d-flex flex-row justify-content-between">
                     <p>Subscription Type:</p>
-                    <p>Premium</p>
+                    <p>Demo Account</p>
                 </div>
                 <div class="d-flex flex-row justify-content-between">
                     <p>Valid Until:</p>
-                    <p>12/12/2024</p>
+                    <p>Demo Account</p>
                 </div>
                 @if($user->username)
                 <div class="d-flex flex-row justify-content-between">

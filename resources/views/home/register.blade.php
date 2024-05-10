@@ -10,7 +10,7 @@
     {{-- Import HoldU CSS --}}
     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
     <link rel="stylesheet" href="{{ asset("css/mobile.css") }}">
-
+    <link rel="stylesheet" href="{{ asset("css/preloader.css") }}">
     {{-- Preconnect Poppins from Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,16 +31,19 @@
                 @csrf
                 <div class="mb-3">
                   <label for="name" class="form-label text-light">Full Name:</label>
-                  <input type="text" name="name" class="form-control login-button">
+                  <input type="text" name="name" class="form-control login-button" required placeholder="Enter your full name...">
                   {{-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> --}}
                 </div>
                 <div class="mb-3">
                   <label for="email" class="form-label text-light">Email Address:</label>
-                  <input type="email" name="email" class="form-control login-button" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" name="email" class="form-control login-button" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Enter your email...">
+                  @error('email')
+                    <span class="text-danger mt-2">Email already exists</span>
+                  @enderror
                 </div>
                 <div class="mb-3">
                   <label for="password" class="form-label text-light">Password:</label>
-                  <input type="password" name="password" class="form-control login-button" id="exampleInputPassword1">
+                  <input type="password" name="password" class="form-control login-button" id="exampleInputPassword1" required placeholder="Enter your password...">
                 </div>
                 {{-- <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -53,6 +56,8 @@
         </div>
       </div>
     </div>
+    @include('ui.preloader')
+    <script src="{{ asset("js/preloader.js") }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

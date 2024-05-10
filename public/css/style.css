@@ -149,6 +149,16 @@ a.navbar-brand > img.logo {
     /* height: 400px; */
 }
 
+.step-form {
+    margin-top: 50px;
+  }
+  .form-step {
+    display: none;
+  }
+  .form-step.form-active {
+    display: block;
+  }
+
 .shortcut-box {
     display: flex;
     flex-direction: row;
@@ -162,9 +172,17 @@ a.navbar-brand > img.logo {
     background: #25434d;
 }
 
+.max-full-height {
+    max-height: 100vh !important;
+    overflow-y: hidden !important;
+}
+
 .sana-pic {
     padding: 10px;
     width: 100%;
+}
+.sana-profile-pic {
+    width: 50%;
 }
 
 .wrap-icon-shortcut {

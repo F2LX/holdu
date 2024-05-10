@@ -1,4 +1,4 @@
-    <div>
+    <div class="max-full-height">
     <div class="container d-flex align-items-center justify-content-center flex-column">
         <div class="chat-place mt-4" id="chat-place">
             <div class="chat-box d-flex flex-column">
@@ -77,7 +77,7 @@
     @endif
         <form wire:submit="save">
             <div class="form-chat mb-3 mt-5">
-                    <input type="text" wire:model="message" placeholder="Type your message..." class="form-size me-3" placeholder="" aria-label="Chat Form" aria-describedby="button-addon1">
+                    <input type="text" wire:model="message" placeholder="Type your message..." class="form-size me-3" placeholder="" aria-label="Chat Form" aria-describedby="button-addon1" required>
                     <button class="btn btn-outline-secondary bg-success d-flex justify-content-center align-items-center" type="submit">
                         <span class="text-success-emphasis material-symbols-outlined fs-3">
                             send

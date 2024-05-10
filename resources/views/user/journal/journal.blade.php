@@ -14,7 +14,7 @@
         </div>
     @endif
     <h3 class="fw-bold mt-4 m-2">My Journal</h3>
-    <p class="m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum temporibus consequuntur neque explicabo eos asperiores, delectus blanditiis aperiam ipsum voluptas corrupti, soluta consequatur ullam? Labore numquam voluptate culpa quos maxime?</p>
+    <p class="m-2">Discover inner insights with HoldU's My Journal. Track emotions, set goals, and reflect on daily experiences in a secure space, fostering personal growth.</p>
 
     <a href="/journal/add" class="m-2 btn btn-success d-flex flex-row btn-normal"><span class="material-symbols-outlined">
         description

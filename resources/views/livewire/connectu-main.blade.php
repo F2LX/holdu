@@ -1,7 +1,7 @@
 <div>
 @if (!$is_profile)
     <form class="d-flex mb-3 mt-4 gap-2" wire:submit="search">
-        <input type="text" id="" wire:model="keyword" class="form-control" placeholder="Search Here...">
+        <input type="text" id="" wire:model="keyword" class="form-control" placeholder="Search Here..." required>
         <button type="submit" class="btn btn-primary px-5 py-1">
             <span class="material-symbols-outlined">
                 search
@@ -12,7 +12,7 @@
     @if (!$users)
     <div class="w-100">
         <form wire:submit="save">
-            <textarea class="w-100 textarea-connectu" wire:model="content" id="" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+            <textarea class="w-100 textarea-connectu" wire:model="content" id="" cols="30" rows="10" placeholder="What's on your mind?" required></textarea>
             <button type="submit" class="btn btn-primary">
                 Submit
             </button>
@@ -75,7 +75,7 @@
                                     <button class="btn btn-default reply-btn float-right ml-5" wire:click="deletecomment({{ $comment->id }})" type="button">Delete</button>
                                 @endif
                                 <form id="reply-form-{{ $comment->id }}" wire:submit="comment({{ $post->id }},{{ $comment->id }})" class="w-100 gap-2" style="display: none ">
-                                    <input type="text" class="form-control form-comment" wire:model="replymsgs.{{ $post->id }}" placeholder="Comment Here">
+                                    <input type="text" class="form-control form-comment" wire:model="replymsgs.{{ $post->id }}" placeholder="Comment Here" required>
                                     <button class="btn btn-primary btn-send" type="submit">Send</button>
                                 </form>
                                 @foreach ($post->comments as $commentReply)
@@ -104,7 +104,7 @@
             </div>
             @endif
             <form wire:submit="comment({{ $post->id }},null)" class="w-100 d-flex gap-2">
-                <input type="text" class="form-control form-comment" wire:model="commentmsgs.{{ $post->id }}" placeholder="Comment here...">
+                <input type="text" class="form-control form-comment" wire:model="commentmsgs.{{ $post->id }}" placeholder="Comment here..." required>
                 <button class="btn btn-primary btn-send" type="submit">Send</button>
             </form>
         </div>

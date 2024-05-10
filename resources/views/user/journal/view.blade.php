@@ -8,7 +8,7 @@
     </div>
 @endif
         <h3 class="fw-bold">View Journal</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem nobis quo repudiandae voluptates excepturi modi, sunt perferendis? Quaerat fuga reiciendis magnam deleniti fugit ipsam quos ipsum. Aliquam officiis et vero sint numquam praesentium? Officia tempore ducimus odit pariatur perferendis?</p>
+        <p>Enhance your journaling experience with these simple tips: Allocate regular time for writing, prioritizing authenticity and honesty in your reflections. Focus on capturing the present moment. Remember, perfection isn't the goal; rather, embrace the process of self-discovery and growth within the pages of your journal.</p>
         <form action="/journal/view/put/{{ $journal->id }}" method="post">
           @csrf
           @method('put')
