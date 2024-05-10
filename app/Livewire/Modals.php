@@ -17,6 +17,7 @@ class Modals extends Component
 
     public function predict_Y(float $x1, float $x2)
     {
+        // Obtained from the python script
         $beta0=0;
         $x1coeff=0.91559766609537;
         $x2coeff=-0.21552508913301066;
@@ -34,6 +35,12 @@ class Modals extends Component
     }
     public function save()
     {
+        /**
+         * How this works?
+         * LeastSquare Regression with x1 and x2 variable
+         * X1 = Mean of the positive response namely question number 1, question number 4 and question number 5
+         * X2 = Mean of the negative response namely question number 2 and question number 3
+         */
         $x1=($this->q1+$this->q4+$this->q5)/3;
         $x2=($this->q2+$this->q3)/2;
 

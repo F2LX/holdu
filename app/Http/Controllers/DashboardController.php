@@ -9,6 +9,7 @@ use App\Models\Quiz;
 
 class DashboardController extends Controller
 {
+    // DashboardController handles all views related to the dashboard
     public function index() {
         $quiz=Quiz::where('user_id',auth()->user()->id)->latest()->first();
         if ($quiz==null || $quiz->date!=date('Y-m-d')) {

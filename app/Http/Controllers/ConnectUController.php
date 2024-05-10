@@ -10,6 +10,7 @@ class ConnectUController extends Controller
 {
     /**
      * Display connectU main pages
+     * More at livewire/ConnectuMain.php
      */
     public function index()
     {

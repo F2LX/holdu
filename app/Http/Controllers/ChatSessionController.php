@@ -12,6 +12,9 @@ class ChatSessionController extends Controller
      */
     public function index()
     {
+        /**
+         * Always Generate Chat Session if Today's session didnt exist.
+         */
         $session=ChatSession::where('user_id',auth()->user()->id)->latest()->first();
         if ($session==null) {
             $chat = new ChatSession;

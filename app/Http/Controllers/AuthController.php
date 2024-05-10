@@ -116,6 +116,7 @@ class AuthController extends Controller
     
     public function handleUsername()
     {
+        // Generate Random Username
         $user=User::find(auth()->user()->id);
         $user->username=$this->generateUniqueUsername($user);
         $user->save();

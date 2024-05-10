@@ -8,6 +8,8 @@ use App\Models\Post;
 use App\Models\User;
 use App\Models\Comment;
 
+// Component ini menghandle keseluruhan proses ConnectU
+
 class ConnectuMain extends Component
 {
     public $content;
