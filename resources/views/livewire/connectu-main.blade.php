@@ -25,7 +25,9 @@
         @foreach($users as $user)
         <div class="w-100 bg-white p-3 d-flex align-items-center">
             <img class="thumbnail-connectu" src="{{ asset("img/".$user->category) }}" alt="">
-            <a href="info/{{ $user->username }}"><p class="fw-bold">{{ $user->username }}</p></a>
+            <a href="info/{{ $user->username }}"><p class="fw-bold">{{ $user->username }}</p>
+            </a>
+            
         </div>
         @endforeach
         <div x-intersect.full="$wire.loadMoreUsers()" class="w-100 d-flex justify-content-center align-items-center text-center p-4">
@@ -50,6 +52,14 @@
                 <div class="d-flex justify-content-center align-items-center">
                 <img class="thumbnail-connectu" src="{{ asset("img/".$post->user->category) }}" alt="">
                 <a href="info/{{ $post->user->username }}"><p class="m-0 fw-bold">{{ $post->user->username }}</p></a>
+                @if ($post->user->is_verified)
+                <div class="ms-4 d-flex flex-row align-items-center bg-primary rounded-5 text-light tag-verified">
+                    <span class="material-symbols-outlined">
+                      check
+                      </span>
+                    <p class="mb-0">Psychologist</p>
+                  </div>
+                @endif
                 </div>
                 <div>
                 @if(auth()->user()->id==$post->user->id)
@@ -68,7 +78,7 @@
                         <img class="thumbnail-comment" src="{{ asset("img/".$comment->user->category) }}" alt="">
                         <div class="d-flex flex-direction-column flex-wrap w-100">
                             <p class="w-100 comment-text">
-                                <a href="info/{{ $comment->user->username }}"><span class="fw-bold">{{ $comment->user->username }}</span></a> <br>
+                                <a href="info/{{ $comment->user->username }}"><span class="fw-bold {{ $comment->user->is_verified?'color-verified':'' }}">{{ $comment->user->username }}</span></a> <br>
                                 {{ $comment->content }}</p><br>
                                 <button class="btn btn-default reply-btn px-3" id="btn-show-form-{{ $comment->id }}" type="button" data-comment-id="{{ $comment->id }}">Reply</button>
                                 @if(auth()->user()->id==$comment->user->id)
@@ -85,7 +95,7 @@
                                             <img class="thumbnail-comment" src="{{ asset("img/".$commentReply->user->category) }}" alt="">
                                             <div class="d-flex flex-direction-column flex-wrap w-100">
                                                 <p class="w-100 comment-text">
-                                                    <a href="info/{{ $commentReply->user->username }}"><span class="fw-bold">{{ $commentReply->user->username }}</span></a> <br>
+                                                    <a href="info/{{ $commentReply->user->username }}"><span class="fw-bold {{ $commentReply->user->is_verified?'color-verified':'' }}">{{ $commentReply->user->username }}</span></a> <br>
                                                     {{ $commentReply->content }}</p><br>
                                                     @if(auth()->user()->id==$commentReply->user->id)
                                                         <button class="btn btn-default reply-btn float-right ml-5" wire:click="deletecomment({{ $commentReply->id }})" type="button">Delete</button>

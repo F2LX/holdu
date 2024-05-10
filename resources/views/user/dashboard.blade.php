@@ -82,11 +82,11 @@
         <div class="d-flex flex-row align-items-center flex-wrap">
           <img src="img/Mushroom.png" class="mushroom" alt="">
           <h5 class="ms-3 mb-0">Mushroom</h5>
-          <div class="ms-4 d-flex flex-row align-items-center bg-primary rounded-5 text-light fs-5 p-1">
+          <div class="ms-4 d-flex flex-row align-items-center bg-primary rounded-5 text-light tag-verified">
             <span class="material-symbols-outlined">
               check
               </span>
-            <p class="mb-0 fs-mini">Psychologist</p>
+            <p class="mb-0">Psychologist</p>
           </div>
         </div>
         <p class="mb-1 mt-2">Get advice from trusted psychologists on ConnectU! Join the limitless community!</p>

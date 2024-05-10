@@ -163,6 +163,20 @@ a.navbar-brand > img.logo {
     background: linear-gradient(to bottom, #25434d, #4b879b);
     color: white !important;
 }
+
+.tag-verified {
+    font-size: 13px !important;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+}
+
+.tag-verified span{
+    font-size: 14px;
+    margin-right: 5px;
+}
 .shortcut-box {
     display: flex;
     flex-direction: row;
@@ -599,7 +613,14 @@ label.radio input:checked + span {
 .reply-btn {
     font-size: 14px;
     padding: 0 !important;
-    margin: 0 !important;
+    margin-right: 10px;
+    margin-left: 0 !important;
+}
+.connect-box p{
+    margin: 0;
+}
+.color-verified {
+    color: #25434d;
 }
 
 .mt-10 {
