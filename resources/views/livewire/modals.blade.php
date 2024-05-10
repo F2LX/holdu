@@ -15,7 +15,7 @@
                     <p>Strongly Disagree</p>
                     <p>Strongly Agree</p>
                 </div>
-              <input type="range" class="form-range" min="1" max="5" id="question-1" wire:model="q1">
+              <input type="range" class="form-range" min="1" max="5" id="question-1" wire:model="q1" required value="3">
             </div>
             <button type="button" class="btn btn-primary next-step">Next</button>
           </div>
@@ -28,7 +28,7 @@
                     <p>Strongly Disagree</p>
                     <p>Strongly Agree</p>
                 </div>
-              <input type="range" class="form-range" min="1" max="5" id="question-2" wire:model="q2">
+              <input type="range" class="form-range" min="1" max="5" id="question-2" wire:model="q2" required value="3">
             </div>
             <button type="button" class="btn btn-secondary prev-step">Previous</button>
             <button type="button" class="btn btn-primary next-step">Next</button>
@@ -42,7 +42,7 @@
                     <p>Strongly Disagree</p>
                     <p>Strongly Agree</p>
                 </div>
-              <input type="range" class="form-range" min="1" max="5" id="question-3" wire:model="q3">
+              <input type="range" class="form-range" min="1" max="5" id="question-3" wire:model="q3" required value="3">
             </div>
             <button type="button" class="btn btn-secondary prev-step">Previous</button>
             <button type="button" class="btn btn-primary next-step">Next</button>
@@ -56,7 +56,7 @@
                     <p>Strongly Disagree</p>
                     <p>Strongly Agree</p>
                 </div>
-              <input type="range" class="form-range" min="1" max="5" id="question-4" wire:model="q4">
+              <input type="range" class="form-range" min="1" max="5" id="question-4" wire:model="q4" required value="3">
             </div>
             <button type="button" class="btn btn-secondary prev-step">Previous</button>
             <button type="button" class="btn btn-primary next-step">Next</button>
@@ -70,7 +70,7 @@
                     <p>Strongly Disagree</p>
                     <p>Strongly Agree</p>
                 </div>
-              <input type="range" class="form-range" min="1" max="5" id="question-5" wire:model="q5">
+              <input type="range" class="form-range" min="1" max="5" id="question-5" wire:model="q5" required value="3">
             </div>
             <button type="button" class="btn btn-secondary prev-step">Previous</button>
             <button type="submit" class="btn btn-primary">Submit</button>
