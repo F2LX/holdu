@@ -55,6 +55,9 @@
     .shortcut-box {
         margin: 0 !important;
     }
+    .social-pic {
+        width: 50px;
+    }
     .icon-box {
         width: 30px;
         border-radius: 18px !important;

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h3 class="fw-bold mb-0">Meditation Track</h3>
+        <h3 class="fw-bold mb-0 mt-4">Meditation Track</h3>
         <p>Your Journey to Inner Peace with HoldU</p>
 
         <div class="container mt-5">

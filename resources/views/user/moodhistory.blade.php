@@ -2,8 +2,7 @@
 
 @section('content')
     <div class="container">
-        <p class="mb-0 mt-5">Monday , 3 December 2024</p>
-        <h3 class="fw-bold">Mood History</h3>
+        <h3 class="fw-bold mt-5">Mood History</h3>
         <p>Your mood history are predicted using HoldU's Machine Learning algorithm</p>
     </div>
     <div class="container">

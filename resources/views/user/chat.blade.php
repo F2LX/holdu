@@ -1,5 +1,5 @@
 @extends('ui.home')
 
 @section('content')
-    @livewire('chatcom')
+    @livewire('ChatCom')
 @endsection

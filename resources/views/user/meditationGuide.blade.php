@@ -2,9 +2,7 @@
 
 @section('content')
     <div class="container">
-
-        <p class="mb-0 mt-5">Monday , 3 December 2024</p>
-        <h3 class="fw-bold mb-0">Meditation Guide</h3>
+        <h3 class="fw-bold mb-0 mt-4">Meditation Guide</h3>
         <p>Your Journey to Inner Peace with HoldU</p>
 
         <div class="container">
