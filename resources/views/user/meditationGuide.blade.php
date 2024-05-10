@@ -9,12 +9,11 @@
 
         <div class="container">
             <div class="row gap-5 w-100">
-                <div class="col-4 rounded-5 d-flex justify-content-center align-items-center p-5 bg-primary">
+                <a href="/meditation/track">
+                <div class="col-4 w-100 rounded-5 d-flex justify-content-center align-items-center p-3 bg-nature">
                     <h2>Nature Sound</h2>
                 </div>
-                <div class="col-7 rounded-5 d-flex justify-content-center align-items-center p-5 bg-primary">
-                    <h2>Nature Sound</h2>
-                </div>
+                </a>
             </div>
         </div>
         <div class="d-flex">

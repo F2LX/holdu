@@ -159,6 +159,10 @@ a.navbar-brand > img.logo {
     display: block;
   }
 
+.bg-nature {
+    background: linear-gradient(to bottom, #25434d, #4b879b);
+    color: white !important;
+}
 .shortcut-box {
     display: flex;
     flex-direction: row;

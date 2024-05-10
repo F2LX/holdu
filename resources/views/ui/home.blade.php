@@ -79,20 +79,20 @@
       <div class="container w-100">
         <div class="footer-box">
           <div class="col-4 d-flex flex-column w-100-mobile">
-            <img class="sit-pic" src="img/white.png" alt="">
+            <img class="sit-pic" src="{{ asset("img/white.png") }}" alt="">
             <p class="text-light"><span class="fw-bold">HoldU, </span>Your sanctuary for mental <br> wellness. Explore personalized <br> resources, connect with a <br> supportive community, and <br> embark on your journey to inner <br> balance.</p>
           </div>
           <div class="col-4 d-flex flex-column gap-3 mt-3 w-100-mobile">
             <div class="social-box">
-              <img class="social-pic" src="img/Instagram.png" alt="">
+              <img class="social-pic" src="{{ asset("img/Instagram.png") }}" alt="">
               <h6 class="text-light mb-0">holduforever</h6>
             </div>
             <div class="social-box">
-              <img class="social-pic" src="img/X.png" alt="">
+              <img class="social-pic" src="{{ asset("img/X.png") }}" alt="">
               <h6 class="text-light mb-0">holduforever</h6>
             </div>
             <div class="social-box">
-              <img class="social-pic" src="img/facebook.png" alt="">
+              <img class="social-pic" src="{{ asset("img/facebook.png") }}" alt="">
               <h6 class="text-light mb-0">holduforever</h6>
             </div>
           </div>
@@ -109,7 +109,10 @@
     
     <script src="{{ asset("js/preloader.js") }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    @if (request()->is('meditation/track'))
     <script src="{{ asset("assets/vendor/libs/plyr/plyr.js") }}"></script>
+    @endif
 
   </body>
 </html>
